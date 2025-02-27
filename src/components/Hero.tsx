@@ -1,14 +1,11 @@
-
 import React, { useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
-
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(heroRef, {
     threshold: 0.1
   });
-
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
@@ -17,7 +14,6 @@ const Hero: React.FC = () => {
       });
     }
   };
-
   return <section ref={heroRef} className="relative min-h-screen flex items-center justify-center section-spacing pt-32 overflow-hidden" id="hero">
       {/* Background Gradient Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background z-0"></div>
@@ -33,7 +29,7 @@ const Hero: React.FC = () => {
           </div>
           
           {/* Main Headline */}
-          <h1 className={`text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6 hero-text-shadow ${getAnimationClass(isInView, 'fade-up', 100)}`}>
+          <h1 className="">
             Simplify Your Workflow <br className="hidden md:inline" />
             <span className="text-primary">Amplify Your Results</span>
           </h1>
@@ -49,14 +45,12 @@ const Hero: React.FC = () => {
             <Button size="lg" className="rounded-full px-8 py-6 text-base" onClick={scrollToContact}>
               Get in Touch
             </Button>
-            <Button variant="outline" size="lg" className="rounded-full px-8 py-6 text-base" onClick={scrollToContact}>
-              Book a Demo
-            </Button>
+            
           </div>
           
           {/* Trust Indicator */}
           <div className={`mt-12 text-sm text-muted-foreground ${getAnimationClass(isInView, 'fade-up', 400)}`}>
-            <p className="mb-5">Trusted by 500+ companies worldwide</p>
+            <p className="mb-5">Trusted by companies worldwide</p>
           </div>
         </div>
       </div>
@@ -65,5 +59,4 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent z-10"></div>
     </section>;
 };
-
 export default Hero;
