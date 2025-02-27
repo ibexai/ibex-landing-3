@@ -7,6 +7,10 @@ import ContactForm from '@/components/Contact';
 const Contact: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
+      {/* Background elements */}
+      <div className="app-background"></div>
+      <div className="glow-overlay"></div>
+      
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

@@ -38,6 +38,10 @@ const Index = () => {
   
   return (
     <div className="antialiased min-h-screen bg-background">
+      {/* Background elements */}
+      <div className="app-background"></div>
+      <div className="glow-overlay"></div>
+      
       <Header />
       <main>
         <Hero />
