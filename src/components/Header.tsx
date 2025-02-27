@@ -44,14 +44,14 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <Button variant="default" size="sm" className="ml-2 px-6 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => {
+          {/* <Button variant="default" size="sm" className="ml-2 px-6 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => {
             const contactSection = document.querySelector('#contact');
             if (contactSection) {
               contactSection.scrollIntoView({ behavior: 'smooth' });
             }
           }}>
             Get in Touch
-          </Button>
+          </Button> */}
         </nav>
         
         {/* Mobile Menu Button */}
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                 {item}
               </a>
             ))}
-            <Button 
+            {/* <Button 
               variant="default" 
               size="default" 
               className="mt-4 w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground"
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
               }}
             >
               Get in Touch
-            </Button>
+            </Button> */}
           </div>
         </div>
       )}
