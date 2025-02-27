@@ -40,7 +40,7 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <Button variant="default" size="sm" className="ml-2 px-6 rounded-full" onClick={() => {
+          <Button variant="default" size="sm" className="ml-2 px-6 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => {
             const contactSection = document.querySelector('#contact');
             if (contactSection) {
               contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
             <Button 
               variant="default" 
               size="default" 
-              className="mt-4 w-full rounded-full"
+              className="mt-4 w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground"
               onClick={() => {
                 setMobileMenuOpen(false);
                 const contactSection = document.querySelector('#contact');

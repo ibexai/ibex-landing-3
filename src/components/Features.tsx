@@ -191,7 +191,7 @@ const Features: React.FC = () => {
             {/* Navigation Buttons */}
             <button 
               onClick={prevFeature} 
-              className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10"
+              className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10 hover:bg-primary/20 transition-colors"
               aria-label="Previous feature"
             >
               <ChevronLeft className="h-6 w-6" />
@@ -199,7 +199,7 @@ const Features: React.FC = () => {
             
             <button 
               onClick={nextFeature} 
-              className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10"
+              className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10 hover:bg-primary/20 transition-colors"
               aria-label="Next feature"
             >
               <ChevronRight className="h-6 w-6" />

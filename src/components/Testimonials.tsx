@@ -5,19 +5,19 @@ import { useInView, getAnimationClass } from '@/lib/animations';
 // Testimonial data
 const testimonials = [
   {
-    content: "SaasFlow has transformed how we manage our client projects. The automation features alone have saved us countless hours each month.",
+    content: "Ibex has transformed how we manage our client projects. The automation features alone have saved us countless hours each month.",
     author: "Sarah Johnson",
     role: "Operations Director",
     company: "Axis Design Co."
   },
   {
-    content: "The intuitive interface makes it easy for our entire team to collaborate. We've seen a 40% increase in productivity since implementing SaasFlow.",
+    content: "The intuitive interface makes it easy for our entire team to collaborate. We've seen a 40% increase in productivity since implementing Ibex.",
     author: "Michael Chen",
     role: "CEO",
     company: "TechVision Inc."
   },
   {
-    content: "As a rapidly growing startup, we needed a solution that could scale with us. SaasFlow not only met our needs but exceeded our expectations.",
+    content: "As a rapidly growing startup, we needed a solution that could scale with us. Ibex not only met our needs but exceeded our expectations.",
     author: "Emily Rodriguez",
     role: "Founder",
     company: "Novus Ventures"
@@ -29,7 +29,7 @@ const testimonials = [
     company: "Global Health Partners"
   },
   {
-    content: "We evaluated several platforms before choosing SaasFlow. The comprehensive feature set and elegant design made it the clear winner for our team.",
+    content: "We evaluated several platforms before choosing Ibex. The comprehensive feature set and elegant design made it the clear winner for our team.",
     author: "Rebecca Kim",
     role: "Marketing Director",
     company: "Impulse Media"
@@ -121,7 +121,7 @@ const Testimonials: React.FC = () => {
             {/* Navigation Buttons */}
             <button 
               onClick={prevTestimonial}
-              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-secondary focus:outline-none"
+              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-primary/10 focus:outline-none"
               aria-label="Previous testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -131,7 +131,7 @@ const Testimonials: React.FC = () => {
             
             <button 
               onClick={nextTestimonial}
-              className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-secondary focus:outline-none"
+              className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-primary/10 focus:outline-none"
               aria-label="Next testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

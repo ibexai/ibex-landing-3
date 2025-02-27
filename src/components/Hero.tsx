@@ -57,12 +57,13 @@ const Hero: React.FC = () => {
           
           {/* Trust Indicator */}
           <div className={`mt-12 text-sm text-muted-foreground ${getAnimationClass(isInView, 'fade-up', 400)}`}>
-            <p className="mb-3">Trusted by 500+ companies worldwide</p>
+            <p className="mb-5">Trusted by 500+ companies worldwide</p>
             <div className="flex flex-wrap justify-center gap-8">
-              {/* Placeholder for company logos - would use real logos in production */}
-              {Array.from({ length: 5 }).map((_, i) => (
-                <div key={i} className="h-8 w-24 bg-muted/30 rounded-md animate-pulse"></div>
-              ))}
+              <img src="/lovable-uploads/0b4001dc-a8ab-4fb9-8d07-a267b4f1fc2e.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+              <img src="/lovable-uploads/258ea354-ade6-48f4-855f-e13a8139bd02.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+              <img src="/lovable-uploads/0b4001dc-a8ab-4fb9-8d07-a267b4f1fc2e.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+              <img src="/lovable-uploads/258ea354-ade6-48f4-855f-e13a8139bd02.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+              <img src="/lovable-uploads/0b4001dc-a8ab-4fb9-8d07-a267b4f1fc2e.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
             </div>
           </div>
         </div>

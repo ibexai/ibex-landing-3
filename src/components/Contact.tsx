@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <p className="text-muted-foreground">hello@saasflow.com</p>
+                  <p className="text-muted-foreground">hello@ibex.com</p>
                 </div>
               </div>
               
@@ -173,7 +173,7 @@ const Contact: React.FC = () => {
                   ></textarea>
                 </div>
                 
-                <Button type="submit" className="w-full py-6">
+                <Button type="submit" className="w-full py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
                   Get in Touch
                 </Button>
                 
