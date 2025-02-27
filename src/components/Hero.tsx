@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           
           {/* Main Headline */}
           <h1 className={`text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6 hero-text-shadow ${getAnimationClass(isInView, 'fade-up', 100)}`}>
-            Simplify Your Workflow <br className="hidden md:inline" />
+            Simplify Retetion Marketing <br className="hidden md:inline" />
             <span className="text-primary">Amplify Your Results</span>
           </h1>
           
