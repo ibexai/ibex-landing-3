@@ -1,6 +1,7 @@
 
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useInView, getStaggeredAnimation } from '@/lib/animations';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Feature data
 const features = [
@@ -60,9 +61,49 @@ const features = [
   }
 ];
 
+// Featured carousel items
+const featuredItems = [
+  {
+    title: "Unified Business Platform",
+    description: "Centralize your operations with our all-in-one platform that connects every aspect of your business. From customer management to financial reporting, everything works together seamlessly.",
+    features: ["Real-time collaboration", "Customizable workflows", "Comprehensive reporting", "Mobile accessibility"],
+    imageText: "Interactive Dashboard Preview"
+  },
+  {
+    title: "AI-Powered Insights",
+    description: "Harness the power of artificial intelligence to uncover hidden patterns in your data and receive actionable recommendations tailored to your business objectives.",
+    features: ["Predictive analytics", "Automated reporting", "Custom AI models", "Trend forecasting"],
+    imageText: "AI Analytics Dashboard"
+  },
+  {
+    title: "Enterprise Collaboration Suite",
+    description: "Break down silos between departments with our comprehensive collaboration tools designed to keep your team connected and productive, no matter where they work.",
+    features: ["Team workspaces", "Document collaboration", "Video conferencing", "Task management"],
+    imageText: "Collaboration Workspace"
+  }
+];
+
 const Features: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef);
+  const [activeFeature, setActiveFeature] = useState(0);
+  
+  // Auto-advance the carousel
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveFeature((prev) => (prev + 1) % featuredItems.length);
+    }, 6000);
+    
+    return () => clearInterval(interval);
+  }, []);
+  
+  const nextFeature = () => {
+    setActiveFeature((prev) => (prev + 1) % featuredItems.length);
+  };
+  
+  const prevFeature = () => {
+    setActiveFeature((prev) => (prev - 1 + featuredItems.length) % featuredItems.length);
+  };
   
   return (
     <section
@@ -100,30 +141,84 @@ const Features: React.FC = () => {
           ))}
         </div>
         
-        {/* Feature Highlight */}
-        <div className={`mt-20 bg-card rounded-2xl overflow-hidden shadow-md border border-border/20 ${isInView ? 'animate-fade-up delay-[600ms]' : 'opacity-0'}`}>
-          <div className="grid md:grid-cols-2">
-            <div className="p-8 md:p-12 flex flex-col justify-center">
-              <div className="inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary">
-                Featured
-              </div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">Unified Business Platform</h3>
-              <p className="text-muted-foreground mb-6">
-                Centralize your operations with our all-in-one platform that connects every aspect of your business. From customer management to financial reporting, everything works together seamlessly.
-              </p>
-              <ul className="space-y-3">
-                {["Real-time collaboration", "Customizable workflows", "Comprehensive reporting", "Mobile accessibility"].map((item, i) => (
-                  <li key={i} className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-primary mr-2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+        {/* Featured Carousel */}
+        <div className={`mt-20 ${isInView ? 'animate-fade-up delay-[600ms]' : 'opacity-0'}`}>
+          <div className="text-center mb-10">
+            <div className="inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary">
+              Featured
             </div>
-            <div className="bg-muted/20 min-h-[300px] md:min-h-[400px] animate-pulse flex items-center justify-center">
-              <p className="text-muted-foreground">Interactive Dashboard Preview</p>
+            <h3 className="text-2xl md:text-3xl font-display font-bold">
+              Discover our key capabilities
+            </h3>
+          </div>
+          
+          <div className="relative">
+            {/* Carousel Container */}
+            <div className="overflow-hidden rounded-2xl shadow-md border border-border/20">
+              <div 
+                className="flex transition-transform duration-500 ease-in-out" 
+                style={{ transform: `translateX(-${activeFeature * 100}%)` }}
+              >
+                {featuredItems.map((item, index) => (
+                  <div 
+                    key={index}
+                    className="min-w-full bg-card"
+                  >
+                    <div className="grid md:grid-cols-2">
+                      <div className="p-8 md:p-12 flex flex-col justify-center">
+                        <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">{item.title}</h3>
+                        <p className="text-muted-foreground mb-6">{item.description}</p>
+                        <ul className="space-y-3">
+                          {item.features.map((feature, i) => (
+                            <li key={i} className="flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-primary mr-2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                              </svg>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="bg-muted/20 min-h-[300px] md:min-h-[400px] animate-pulse flex items-center justify-center">
+                        <p className="text-muted-foreground">{item.imageText}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Navigation Buttons */}
+            <button 
+              onClick={prevFeature} 
+              className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10"
+              aria-label="Previous feature"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+            
+            <button 
+              onClick={nextFeature} 
+              className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10"
+              aria-label="Next feature"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
+            
+            {/* Indicator Dots */}
+            <div className="flex justify-center mt-6 space-x-2">
+              {featuredItems.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveFeature(index)}
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                    index === activeFeature 
+                      ? "bg-primary w-8" 
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  aria-label={`Go to feature ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </div>
