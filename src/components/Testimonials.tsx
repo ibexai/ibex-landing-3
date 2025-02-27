@@ -58,7 +58,7 @@ const Testimonials: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className={`inline-block mb-4 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-sm font-medium text-primary ${getAnimationClass(isInView, 'fade-in')}`}>
+          <div className={`inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary ${getAnimationClass(isInView, 'fade-in')}`}>
             Client Feedback
           </div>
           <h2 className={`text-3xl md:text-4xl font-display font-bold mb-4 ${getAnimationClass(isInView, 'fade-up', 100)}`}>
@@ -83,11 +83,11 @@ const Testimonials: React.FC = () => {
                     key={index}
                     className="min-w-full p-2"
                   >
-                    <div className="bg-background rounded-xl p-8 shadow-sm border border-border/40">
+                    <div className="bg-card rounded-xl p-8 shadow-md border border-border/20">
                       <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         fill="currentColor" 
-                        className="w-12 h-12 text-primary/10 mb-6" 
+                        className="w-12 h-12 text-primary/20 mb-6" 
                         viewBox="0 0 16 16"
                       >
                         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
@@ -99,8 +99,8 @@ const Testimonials: React.FC = () => {
                       
                       <div className="flex items-center">
                         {/* Avatar placeholder */}
-                        <div className="w-12 h-12 rounded-full bg-muted/50 flex items-center justify-center mr-4">
-                          <span className="text-sm font-medium">
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                          <span className="text-sm font-medium text-primary">
                             {testimonial.author.split(' ').map(name => name[0]).join('')}
                           </span>
                         </div>
@@ -121,7 +121,7 @@ const Testimonials: React.FC = () => {
             {/* Navigation Buttons */}
             <button 
               onClick={prevTestimonial}
-              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-background border border-border flex items-center justify-center shadow-sm btn-transition hover:bg-muted/50 focus:outline-none"
+              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-secondary focus:outline-none"
               aria-label="Previous testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -131,7 +131,7 @@ const Testimonials: React.FC = () => {
             
             <button 
               onClick={nextTestimonial}
-              className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-background border border-border flex items-center justify-center shadow-sm btn-transition hover:bg-muted/50 focus:outline-none"
+              className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-secondary focus:outline-none"
               aria-label="Next testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

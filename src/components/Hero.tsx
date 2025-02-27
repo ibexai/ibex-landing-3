@@ -7,6 +7,13 @@ const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(heroRef, { threshold: 0.1 });
   
+  const scrollToContact = () => {
+    const contactSection = document.querySelector('#contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <section
       ref={heroRef}
@@ -14,7 +21,7 @@ const Hero: React.FC = () => {
       id="hero"
     >
       {/* Background Gradient Effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 to-background z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background z-0"></div>
       
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0xLjEuOS0yIDItMmgxMmExIDEgMCAwIDEgMSAxIDEgMSAwIDAgMSAxIDFoLTFhMSAxIDAgMCAxLTEtMUgzN2ExIDEgMCAwIDEtMS0xeiIvPjwvZz48L2c+PC9zdmc+')] z-0"></div>
@@ -40,10 +47,10 @@ const Hero: React.FC = () => {
           
           {/* CTA Buttons */}
           <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 ${getAnimationClass(isInView, 'fade-up', 300)}`}>
-            <Button size="lg" className="rounded-full px-8 py-6 text-base">
-              Start Free Trial
+            <Button size="lg" className="rounded-full px-8 py-6 text-base" onClick={scrollToContact}>
+              Get in Touch
             </Button>
-            <Button variant="outline" size="lg" className="rounded-full px-8 py-6 text-base">
+            <Button variant="outline" size="lg" className="rounded-full px-8 py-6 text-base" onClick={scrollToContact}>
               Book a Demo
             </Button>
           </div>

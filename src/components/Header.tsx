@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'py-3 bg-white/95 backdrop-blur-md shadow-sm' : 'py-5 bg-transparent'
+        isScrolled ? 'py-3 bg-background/95 backdrop-blur-md shadow-sm' : 'py-5 bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {['Features', 'Pricing', 'Testimonials', 'Contact'].map((item) => (
+          {['Features', 'Testimonials', 'Contact'].map((item) => (
             <a 
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -40,8 +40,13 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <Button variant="default" size="sm" className="ml-2 px-6 rounded-full">
-            Get Started
+          <Button variant="default" size="sm" className="ml-2 px-6 rounded-full" onClick={() => {
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>
+            Get in Touch
           </Button>
         </nav>
         
@@ -61,9 +66,9 @@ const Header: React.FC = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-md animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-md animate-fade-in">
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
-            {['Features', 'Pricing', 'Testimonials', 'Contact'].map((item) => (
+            {['Features', 'Testimonials', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -73,8 +78,19 @@ const Header: React.FC = () => {
                 {item}
               </a>
             ))}
-            <Button variant="default" size="default" className="mt-4 w-full rounded-full">
-              Get Started
+            <Button 
+              variant="default" 
+              size="default" 
+              className="mt-4 w-full rounded-full"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                const contactSection = document.querySelector('#contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              Get in Touch
             </Button>
           </div>
         </div>

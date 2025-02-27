@@ -68,12 +68,12 @@ const Features: React.FC = () => {
     <section
       ref={sectionRef}
       id="features"
-      className="section-spacing bg-secondary/30"
+      className="section-spacing bg-secondary/10"
     >
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className={`inline-block mb-4 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-sm font-medium text-primary ${isInView ? 'animate-fade-in' : 'opacity-0'}`}>
+          <div className={`inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary ${isInView ? 'animate-fade-in' : 'opacity-0'}`}>
             Powerful Capabilities
           </div>
           <h2 className={`text-3xl md:text-4xl font-display font-bold mb-4 ${isInView ? 'animate-fade-up delay-100' : 'opacity-0'}`}>
@@ -89,9 +89,9 @@ const Features: React.FC = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`feature-card bg-background rounded-xl p-6 shadow-sm border border-border/40 ${getStaggeredAnimation(isInView, index, 100)}`}
+              className={`feature-card bg-card rounded-xl p-6 shadow-md border border-border/20 ${getStaggeredAnimation(isInView, index, 100)}`}
             >
-              <div className="w-12 h-12 bg-primary/5 text-primary rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -101,10 +101,10 @@ const Features: React.FC = () => {
         </div>
         
         {/* Feature Highlight */}
-        <div className={`mt-20 bg-background rounded-2xl overflow-hidden shadow-sm border border-border/40 ${isInView ? 'animate-fade-up delay-[600ms]' : 'opacity-0'}`}>
+        <div className={`mt-20 bg-card rounded-2xl overflow-hidden shadow-md border border-border/20 ${isInView ? 'animate-fade-up delay-[600ms]' : 'opacity-0'}`}>
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              <div className="inline-block mb-4 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-sm font-medium text-primary">
+              <div className="inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary">
                 Featured
               </div>
               <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">Unified Business Platform</h3>
@@ -122,7 +122,7 @@ const Features: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <div className="bg-muted/30 min-h-[300px] md:min-h-[400px] animate-pulse flex items-center justify-center">
+            <div className="bg-muted/20 min-h-[300px] md:min-h-[400px] animate-pulse flex items-center justify-center">
               <p className="text-muted-foreground">Interactive Dashboard Preview</p>
             </div>
           </div>
