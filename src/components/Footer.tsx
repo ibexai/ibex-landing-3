@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -12,10 +13,20 @@ const Footer: React.FC = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-6">
-            {['Terms', 'Privacy', 'Cookies', 'License', 'Sitemap'].map((item) => (
-              <a key={item} href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                {item}
-              </a>
+            {[
+              { name: 'Terms', path: '/terms' },
+              { name: 'Privacy', path: '/privacy' },
+              { name: 'Cookies', path: '/cookies' },
+              { name: 'License', path: '/license' },
+              { name: 'Sitemap', path: '/sitemap' }
+            ].map((item) => (
+              <Link 
+                key={item.name} 
+                to={item.path} 
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {item.name}
+              </Link>
             ))}
           </div>
         </div>

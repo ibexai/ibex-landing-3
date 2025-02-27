@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,34 +25,37 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/3b77f73e-046e-4192-8154-4b6ac8915a65.png" 
               alt="Ibex Logo" 
               className="h-8 md:h-10" 
             />
-          </a>
+          </Link>
         </div>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {['Features', 'Testimonials', 'Contact'].map((item) => (
-            <a 
-              key={item}
-              href={`#${item.toLowerCase()}`}
+        <nav className="hidden md:flex items-center space-x-6">
+          {[
+            { name: 'How it works', path: '/how-it-works' },
+            { name: 'Features', path: '/features' },
+            { name: 'Case Studies', path: '/case-studies' },
+            { name: 'Blog', path: '/blog' },
+            { name: 'Contact', path: '/contact' }
+          ].map((item) => (
+            <Link 
+              key={item.name}
+              to={item.path}
               className="text-sm font-medium text-foreground/80 hover:text-foreground btn-transition"
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
-          {/* <Button variant="default" size="sm" className="ml-2 px-6 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => {
-            const contactSection = document.querySelector('#contact');
-            if (contactSection) {
-              contactSection.scrollIntoView({ behavior: 'smooth' });
-            }
+          <Button variant="default" size="sm" className="ml-2 px-6 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => {
+            window.location.href = '/contact';
           }}>
             Get in Touch
-          </Button> */}
+          </Button>
         </nav>
         
         {/* Mobile Menu Button */}
@@ -72,30 +76,33 @@ const Header: React.FC = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-md animate-fade-in">
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
-            {['Features', 'Testimonials', 'Contact'].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+            {[
+              { name: 'How it works', path: '/how-it-works' },
+              { name: 'Features', path: '/features' },
+              { name: 'Case Studies', path: '/case-studies' },
+              { name: 'Blog', path: '/blog' },
+              { name: 'Contact', path: '/contact' }
+            ].map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
                 className="text-lg font-medium text-foreground/80 hover:text-foreground btn-transition py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
-            {/* <Button 
+            <Button 
               variant="default" 
               size="default" 
               className="mt-4 w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground"
               onClick={() => {
                 setMobileMenuOpen(false);
-                const contactSection = document.querySelector('#contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
+                window.location.href = '/contact';
               }}
             >
               Get in Touch
-            </Button> */}
+            </Button>
           </div>
         </div>
       )}
