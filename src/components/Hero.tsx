@@ -1,25 +1,20 @@
-
 import React, { useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
-
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(heroRef, { threshold: 0.1 });
-  
+  const isInView = useInView(heroRef, {
+    threshold: 0.1
+  });
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-  
-  return (
-    <section
-      ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center section-spacing pt-32 overflow-hidden"
-      id="hero"
-    >
+  return <section ref={heroRef} className="relative min-h-screen flex items-center justify-center section-spacing pt-32 overflow-hidden" id="hero">
       {/* Background Gradient Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background z-0"></div>
       
@@ -58,21 +53,13 @@ const Hero: React.FC = () => {
           {/* Trust Indicator */}
           <div className={`mt-12 text-sm text-muted-foreground ${getAnimationClass(isInView, 'fade-up', 400)}`}>
             <p className="mb-5">Trusted by 500+ companies worldwide</p>
-            <div className="flex flex-wrap justify-center gap-8">
-              <img src="/lovable-uploads/0b4001dc-a8ab-4fb9-8d07-a267b4f1fc2e.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-              <img src="/lovable-uploads/258ea354-ade6-48f4-855f-e13a8139bd02.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-              <img src="/lovable-uploads/0b4001dc-a8ab-4fb9-8d07-a267b4f1fc2e.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-              <img src="/lovable-uploads/258ea354-ade6-48f4-855f-e13a8139bd02.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-              <img src="/lovable-uploads/0b4001dc-a8ab-4fb9-8d07-a267b4f1fc2e.png" alt="Partner logo" className="h-8 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-            </div>
+            
           </div>
         </div>
       </div>
       
       {/* Decorative Elements */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent z-10"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
