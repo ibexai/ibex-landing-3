@@ -24,8 +24,12 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="text-xl md:text-2xl font-display font-semibold text-foreground tracking-tight">
-            Ibex
+          <a href="#" className="flex items-center">
+            <img 
+              src="/lovable-uploads/3b77f73e-046e-4192-8154-4b6ac8915a65.png" 
+              alt="Ibex Logo" 
+              className="h-8 md:h-10" 
+            />
           </a>
         </div>
         

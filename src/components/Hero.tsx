@@ -1,11 +1,14 @@
+
 import React, { useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
+
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(heroRef, {
     threshold: 0.1
   });
+
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
@@ -14,6 +17,7 @@ const Hero: React.FC = () => {
       });
     }
   };
+
   return <section ref={heroRef} className="relative min-h-screen flex items-center justify-center section-spacing pt-32 overflow-hidden" id="hero">
       {/* Background Gradient Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background z-0"></div>
@@ -53,7 +57,6 @@ const Hero: React.FC = () => {
           {/* Trust Indicator */}
           <div className={`mt-12 text-sm text-muted-foreground ${getAnimationClass(isInView, 'fade-up', 400)}`}>
             <p className="mb-5">Trusted by 500+ companies worldwide</p>
-            
           </div>
         </div>
       </div>
@@ -62,4 +65,5 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent z-10"></div>
     </section>;
 };
+
 export default Hero;
