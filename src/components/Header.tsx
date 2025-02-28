@@ -40,8 +40,7 @@ const Header: React.FC = () => {
             { name: 'How it works', path: '/how-it-works' },
             { name: 'Features', path: '/features' },
             { name: 'Case Studies', path: '/case-studies' },
-            { name: 'Blog', path: '/blog' },
-            { name: 'Contact', path: '/contact' }
+            { name: 'Blog', path: '/blog' }
           ].map((item) => (
             <Link 
               key={item.name}

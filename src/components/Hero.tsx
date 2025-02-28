@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           {/* Pre-title Tag */}
           <div className={`inline-block mb-4 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-sm font-medium text-primary ${getAnimationClass(isInView, 'fade-in')}`}>
-            Streamline Your Business Operations
+            Your Retention Copilot
           </div>
           
           {/* Main Headline */}
@@ -40,8 +40,7 @@ const Hero: React.FC = () => {
           
           {/* Subtitle */}
           <p className={`text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 ${getAnimationClass(isInView, 'fade-up', 200)}`}>
-            Our platform helps businesses automate complex processes, 
-            reduce overhead, and focus on what truly matters: growth.
+            Our platform helps gaming businesses automate retention and optimise processes, reduce overhead, and focus on what truly matters: scale.
           </p>
           
           {/* CTA Buttons */}
@@ -49,14 +48,11 @@ const Hero: React.FC = () => {
             <Button size="lg" className="rounded-full px-8 py-6 text-base" onClick={scrollToContact}>
               Get in Touch
             </Button>
-            <Button variant="outline" size="lg" className="rounded-full px-8 py-6 text-base" onClick={scrollToContact}>
-              Book a Demo
-            </Button>
           </div>
           
           {/* Trust Indicator */}
           <div className={`mt-12 text-sm text-muted-foreground ${getAnimationClass(isInView, 'fade-up', 400)}`}>
-            <p className="mb-5">Trusted by 500+ companies worldwide</p>
+            <p className="mb-5">Trusted by iGaming companies worldwide</p>
           </div>
         </div>
       </div>
