@@ -8,31 +8,22 @@ const testimonials = [
     content: "Ibex has transformed how we manage our client projects. The automation features alone have saved us countless hours each month.",
     author: "Sarah Johnson",
     role: "Operations Director",
-    company: "Axis Design Co."
+    company: "Axis Design Co.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
   },
   {
     content: "The intuitive interface makes it easy for our entire team to collaborate. We've seen a 40% increase in productivity since implementing Ibex.",
     author: "Michael Chen",
     role: "CEO",
-    company: "TechVision Inc."
+    company: "TechVision Inc.",
+    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
   },
   {
     content: "As a rapidly growing startup, we needed a solution that could scale with us. Ibex not only met our needs but exceeded our expectations.",
     author: "Emily Rodriguez",
     role: "Founder",
-    company: "Novus Ventures"
-  },
-  {
-    content: "The customer support team is exceptional. Any time we've had questions, they've been responsive, helpful, and genuinely invested in our success.",
-    author: "David Patel",
-    role: "IT Manager",
-    company: "Global Health Partners"
-  },
-  {
-    content: "We evaluated several platforms before choosing Ibex. The comprehensive feature set and elegant design made it the clear winner for our team.",
-    author: "Rebecca Kim",
-    role: "Marketing Director",
-    company: "Impulse Media"
+    company: "Novus Ventures",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
   }
 ];
 
@@ -93,16 +84,18 @@ const Testimonials: React.FC = () => {
                         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
                       </svg>
                       
-                      <p className="text-lg font-medium mb-6">
+                      <p className="text-lg font-medium mb-8">
                         "{testimonial.content}"
                       </p>
                       
                       <div className="flex items-center">
-                        {/* Avatar placeholder */}
-                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
-                          <span className="text-sm font-medium text-primary">
-                            {testimonial.author.split(' ').map(name => name[0]).join('')}
-                          </span>
+                        {/* Profile image */}
+                        <div className="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-primary/20">
+                          <img 
+                            src={testimonial.image} 
+                            alt={testimonial.author} 
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                         
                         <div>
