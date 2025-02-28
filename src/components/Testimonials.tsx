@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from 'react';
 import { useInView, getAnimationClass } from '@/lib/animations';
 
@@ -74,7 +73,7 @@ const Testimonials: React.FC = () => {
                     key={index}
                     className="min-w-full p-2"
                   >
-                    <div className="bg-card rounded-xl p-8 shadow-md border border-border/20">
+                    <div className="glass-card p-8">
                       <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         fill="currentColor" 

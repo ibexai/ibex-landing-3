@@ -6,10 +6,10 @@
 
 @layer base {
   :root {
-    --background: 220 10% 10%;
+    --background: 0, 0%, 11%;
     --foreground: 0 0% 98%;
 
-    --card: 220 12% 14%;
+    --card: 140 0% 20%;
     --card-foreground: 0 0% 98%;
 
     --popover: 220 10% 10%;
@@ -131,10 +131,22 @@
   
   /* Glass card effect */
   .glass-card {
-    @apply bg-secondary border border-border shadow-sm;
-    box-shadow: 0 0 15px hsl(var(--primary) / 0.08);
+    @apply bg-card/95 border border-border rounded-lg overflow-hidden;
     position: relative;
     z-index: 1;
+    transition: all 0.2s ease;
+    box-shadow: 
+      0 4px 24px -1px hsl(var(--primary) / 0.25),
+      0 0 0 1px hsl(var(--primary) / 0.1),
+      0 0 0 0 hsl(var(--primary) / 0);
+  }
+  
+  .glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 8px 32px -2px hsl(var(--primary) / 0.35),
+      0 0 0 1px hsl(var(--primary) / 0.2),
+      0 0 32px -4px hsl(var(--primary) / 0.2);
   }
   
   /* Button hover transition */
@@ -159,14 +171,22 @@
   
   /* Feature card hover */
   .feature-card {
-    @apply transition-all duration-300 ease-out bg-secondary;
+    @apply bg-card/95 border border-border rounded-lg overflow-hidden;
     position: relative;
     z-index: 1;
+    transition: all 0.2s ease;
+    box-shadow: 
+      0 4px 24px -1px hsl(var(--primary) / 0.25),
+      0 0 0 1px hsl(var(--primary) / 0.1),
+      0 0 0 0 hsl(var(--primary) / 0);
   }
   
   .feature-card:hover {
-    @apply transform translate-y-[-5px] shadow-md;
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.1);
+    transform: translateY(-4px);
+    box-shadow: 
+      0 8px 32px -2px hsl(var(--primary) / 0.35),
+      0 0 0 1px hsl(var(--primary) / 0.2),
+      0 0 32px -4px hsl(var(--primary) / 0.2);
   }
   
   /* Custom scrollbar */
