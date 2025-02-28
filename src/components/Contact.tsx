@@ -1,47 +1,42 @@
+
 import React, { useRef, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
 import { useToast } from '@/hooks/use-toast';
+
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef);
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     company: '',
     message: ''
   });
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
+    const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
+  
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
     console.log('Form submitted:', formData);
-
-    // Show success toast
+    
+    // We don't prevent default here since we want the form to submit normally
+    // to the Formspree endpoint
+    
+    // Toast is shown, but actual submission is handled by Formspree
     toast({
       title: "Message sent!",
       description: "Thanks for reaching out. We'll get back to you shortly."
     });
-
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      message: ''
-    });
   };
+  
   return <section ref={sectionRef} id="contact" className="section-spacing bg-secondary/10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -92,34 +87,74 @@ const Contact: React.FC = () => {
           
           {/* Form Side */}
           <div className={getAnimationClass(isInView, 'fade-up', 200)}>
-            <form className="bg-card rounded-xl shadow-md border border-border/20 p-8" onSubmit={handleSubmit}>
+            <form 
+              className="bg-card rounded-xl shadow-md border border-border/20 p-8" 
+              action="https://formspree.io/f/mpvyaoym"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
               <div className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Your Name
                   </label>
-                  <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="John Doe" required />
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    value={formData.name} 
+                    onChange={handleChange} 
+                    className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" 
+                    placeholder="John Doe" 
+                    required 
+                  />
                 </div>
                 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Email Address
                   </label>
-                  <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="john@company.com" required />
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    value={formData.email} 
+                    onChange={handleChange} 
+                    className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" 
+                    placeholder="john@company.com" 
+                    required 
+                  />
                 </div>
                 
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium mb-2">
                     Company
                   </label>
-                  <input type="text" id="company" name="company" value={formData.company} onChange={handleChange} className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Your Company Ltd." />
+                  <input 
+                    type="text" 
+                    id="company" 
+                    name="company" 
+                    value={formData.company} 
+                    onChange={handleChange} 
+                    className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" 
+                    placeholder="Your Company Ltd." 
+                  />
                 </div>
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
                     Message
                   </label>
-                  <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Tell us about your project..." required></textarea>
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    value={formData.message} 
+                    onChange={handleChange} 
+                    rows={4} 
+                    className="w-full px-4 py-3 rounded-md border border-border bg-secondary/30 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" 
+                    placeholder="Tell us about your project..." 
+                    required
+                  ></textarea>
                 </div>
                 
                 <Button type="submit" className="w-full py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -140,4 +175,5 @@ const Contact: React.FC = () => {
       </div>
     </section>;
 };
+
 export default Contact;
