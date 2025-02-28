@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
+
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(heroRef, {
     threshold: 0.1
   });
+
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
@@ -58,19 +60,18 @@ const Hero: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6 relative z-10 mt-4 w-full">
           <div className={`max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-2xl ${getAnimationClass(isInView, 'scale-in', 500)}`}>
             {/* Dashboard Image */}
-            <div className="relative bg-card rounded-2xl border border-primary/10 overflow-hidden">
-              {/* Glowing border effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10 animate-pulse"></div>
-              
+            <div className="relative bg-card overflow-hidden">
               {/* The dashboard image */}
-              <div className="aspect-[16/9] overflow-hidden relative">
+              <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10"></div>
-                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" alt="Ibex Dashboard Interface" className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" />
+                <img 
+                  src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/dashboard.png" 
+                  alt="Ibex Dashboard" 
+                  className="w-full h-auto" 
+                />
                 
                 {/* Overlay Details */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent text-white">
-                  
-                  
                 </div>
               </div>
             </div>
