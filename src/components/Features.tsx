@@ -73,7 +73,8 @@ const featuredItems = [
     title: "AI-Powered Insights",
     description: "Harness the power of artificial intelligence to uncover hidden patterns in your data and receive actionable recommendations tailored to your business objectives.",
     features: ["Predictive analytics", "Automated reporting", "Custom AI models", "Trend forecasting"],
-    imageText: "AI Analytics Dashboard"
+    imageText: "AI Analytics Dashboard",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1470&auto=format&fit=crop"
   },
   {
     title: "Enterprise Collaboration Suite",
@@ -88,11 +89,11 @@ const Features: React.FC = () => {
   const isInView = useInView(sectionRef);
   const [activeFeature, setActiveFeature] = useState(0);
   
-  // Auto-advance the carousel
+  // Auto-advance the carousel with reduced speed (from 6000ms to 10000ms)
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveFeature((prev) => (prev + 1) % featuredItems.length);
-    }, 6000);
+    }, 10000);
     
     return () => clearInterval(interval);
   }, []);
@@ -179,8 +180,16 @@ const Features: React.FC = () => {
                           ))}
                         </ul>
                       </div>
-                      <div className="bg-muted/20 min-h-[300px] md:min-h-[400px] animate-pulse flex items-center justify-center">
-                        <p className="text-muted-foreground">{item.imageText}</p>
+                      <div className={`${item.image ? 'relative' : 'bg-muted/20'} min-h-[300px] md:min-h-[400px] flex items-center justify-center`}>
+                        {item.image ? (
+                          <img 
+                            src={item.image} 
+                            alt={item.imageText} 
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <p className="text-muted-foreground animate-pulse">{item.imageText}</p>
+                        )}
                       </div>
                     </div>
                   </div>
