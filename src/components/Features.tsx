@@ -67,7 +67,8 @@ const featuredItems = [
     title: "Unified Business Platform",
     description: "Centralize your operations with our all-in-one platform that connects every aspect of your business. From customer management to financial reporting, everything works together seamlessly.",
     features: ["Real-time collaboration", "Customizable workflows", "Comprehensive reporting", "Mobile accessibility"],
-    imageText: "Interactive Dashboard Preview"
+    imageText: "Interactive Dashboard Preview",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop"
   },
   {
     title: "AI-Powered Insights",
@@ -80,7 +81,8 @@ const featuredItems = [
     title: "Enterprise Collaboration Suite",
     description: "Break down silos between departments with our comprehensive collaboration tools designed to keep your team connected and productive, no matter where they work.",
     features: ["Team workspaces", "Document collaboration", "Video conferencing", "Task management"],
-    imageText: "Collaboration Workspace"
+    imageText: "Collaboration Workspace",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1470&auto=format&fit=crop"
   }
 ];
 
@@ -180,16 +182,13 @@ const Features: React.FC = () => {
                           ))}
                         </ul>
                       </div>
-                      <div className={`${item.image ? 'relative' : 'bg-muted/20'} min-h-[300px] md:min-h-[400px] flex items-center justify-center`}>
-                        {item.image ? (
-                          <img 
-                            src={item.image} 
-                            alt={item.imageText} 
-                            className="w-full h-full object-cover"
-                          />
-                        ) : (
-                          <p className="text-muted-foreground animate-pulse">{item.imageText}</p>
-                        )}
+                      <div className="relative min-h-[300px] md:min-h-[400px] overflow-hidden">
+                        <img 
+                          src={item.image} 
+                          alt={item.imageText} 
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-l from-black/20 to-transparent"></div>
                       </div>
                     </div>
                   </div>
