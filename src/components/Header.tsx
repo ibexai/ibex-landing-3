@@ -1,27 +1,15 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <header 
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'py-3 bg-background/95 backdrop-blur-md shadow-sm' : 'py-5 bg-transparent'
-      }`}
+      className="fixed w-full top-0 z-50 bg-background border-b border-border/30 py-3 shadow-sm"
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
@@ -73,7 +61,7 @@ const Header: React.FC = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-md animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 w-full bg-background border-t border-border/30 shadow-md animate-fade-in">
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
             {[
               { name: 'How it works', path: '/how-it-works' },
