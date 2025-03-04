@@ -18,7 +18,7 @@ const CaseStudies: React.FC = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">Case Studies</h1>
               <p className="text-xl text-muted-foreground">
-                Explore how our solutions have transformed businesses across various industries.
+                Ibex has been proven to successfully automate retention campaigns and optimise the LTV impact of iGaming companies across the world.
               </p>
             </div>
           </div>
@@ -127,9 +127,9 @@ const CaseStudies: React.FC = () => {
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to transform your business?</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to maximise your player LTV?</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Let's discuss how our solutions can address your specific challenges.
+                Let's discuss how Ibex can work for you.
               </p>
               <a href="/contact" className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 py-2">
                 Get in Touch

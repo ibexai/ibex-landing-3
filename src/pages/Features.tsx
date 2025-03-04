@@ -19,7 +19,7 @@ const Features: React.FC = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">Features</h1>
               <p className="text-xl text-muted-foreground">
-                Explore the powerful capabilities that make Ibex the leading platform for business optimization.
+                Explore the powerful capabilities that make Ibex the platform to beat when it comes to LTV optimisation.
               </p>
             </div>
           </div>
