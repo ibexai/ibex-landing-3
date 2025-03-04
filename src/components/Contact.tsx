@@ -47,10 +47,10 @@ const Contact: React.FC = () => {
                 Get in Touch
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                Let's discuss your business needs
+                Let's supercharge your retention results
               </h2>
               <p className="text-muted-foreground">
-                Have questions about our platform or need a custom solution? Fill out the form and one of our team members will get back to you shortly.
+                Want to discuss the best way to get started? Fill out the form and one of our team members will get back to you shortly.
               </p>
             </div>
             
@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <p className="text-muted-foreground">hello@ibex.com</p>
+                  <p className="text-muted-foreground">sales@ibex.ai</p>
                 </div>
               </div>
               
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Office</h3>
-                  <p className="text-muted-foreground">123 Innovation Way, San Francisco, CA 94103</p>
+                  <p className="text-muted-foreground">36-38 Piccadilly, London, W1J 0DP</p>
                 </div>
               </div>
             </div>

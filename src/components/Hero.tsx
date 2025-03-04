@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             
             {/* Subtitle */}
             <p className={`text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 ${getAnimationClass(isInView, 'fade-up', 200)}`}>
-              Our platform helps gaming businesses automate retention and optimise processes, reduce overhead, and focus on what truly matters: scale.
+              Our platform helps gaming businesses automate retention and optimise processes, reduce overhead, and focus on what truly matters: impact.
             </p>
             
             {/* CTA Buttons */}

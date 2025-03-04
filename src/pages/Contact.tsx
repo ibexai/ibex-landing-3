@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">Contact Us</h1>
               <p className="text-xl text-muted-foreground">
-                Have questions or ready to get started? We're here to help you every step of the way.
+                Have questions or ready to get started? We're here to answer your questions and start you on your Ibex journey.
               </p>
             </div>
           </div>
