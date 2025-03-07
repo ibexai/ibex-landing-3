@@ -2,45 +2,90 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Terms: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main>
-        <div className="container mx-auto px-4 md:px-6 py-32">
+      <main className="pt-24">
+        <div className="container mx-auto px-4 md:px-6 py-12">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-display font-bold mb-8">Terms of Service</h1>
+            <h1 className="text-4xl font-display font-bold mb-8">Terms of Use</h1>
             
-            <div className="prose prose-lg prose-invert">
-              <p className="text-muted-foreground">Last updated: April 15, 2023</p>
+            <div className="prose prose-lg prose-invert max-w-none">
+              <p className="text-muted-foreground">Last updated: July 2023</p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">1. Introduction</h2>
-              <p>Welcome to Ibex. These Terms of Service govern your use of our website, products, and services.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
+                <p>Welcome to Ibex. These Terms of Use govern your use of our website, applications, and services. Please read these terms carefully before using our services.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">2. Acceptance of Terms</h2>
-              <p>By accessing or using our services, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the service.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">2. Acceptance</h2>
+                <p>By accessing or using the Ibex platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you should not access or use our services.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">3. Use License</h2>
-              <p>Permission is granted to temporarily use our services for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">3. Changes to the Terms</h2>
+                <p>We reserve the right to modify these Terms of Use at any time. Changes will be effective immediately upon posting to our website. Your continued use of our services after any changes indicates your acceptance of the modified terms.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">4. Service Availability and Modifications</h2>
-              <p>We reserve the right to withdraw or amend our service, and any service or material we provide, without notice. We will not be liable if for any reason all or any part of our service is unavailable at any time or for any period.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">4. Registration and Account Security</h2>
+                <p>To access certain features of our platform, you may need to register for an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">5. User Responsibilities</h2>
-              <p>You are responsible for ensuring that all persons who access our service through your account are aware of these Terms and comply with them.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">5. Intellectual Property Rights</h2>
+                <p>The Ibex platform, including all content, features, and functionality, is owned by us and is protected by international copyright, trademark, patent, and other intellectual property laws.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">6. Limitation of Liability</h2>
-              <p>In no event will Ibex, or its suppliers or licensors, be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">6. User Content</h2>
+                <p>You retain ownership of any content you submit to our platform. By submitting content, you grant us a worldwide, non-exclusive license to use, reproduce, modify, and display your content in connection with our services.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">7. Governing Law</h2>
-              <p>These terms shall be governed and construed in accordance with the laws, without regard to its conflict of law provisions.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">7. Prohibited Activities</h2>
+                <p>You agree not to use our platform for any unlawful purpose or in any way that could damage, disable, or impair our services. Prohibited activities include unauthorized access, data mining, and transmission of harmful code.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">8. Changes to Terms</h2>
-              <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">8. Data Protection and Privacy</h2>
+                <p>Our collection and use of personal information is governed by our Privacy Policy. By using our services, you consent to our data practices as described in our Privacy Policy.</p>
+              </section>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">9. Contact Us</h2>
-              <p>If you have any questions about these Terms, please contact us at legal@ibex.com.</p>
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">9. Termination</h2>
+                <p>We may terminate or suspend your access to our services immediately, without prior notice or liability, for any reason, including breach of these Terms of Use.</p>
+              </section>
+              
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">10. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services.</p>
+              </section>
+              
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">11. Governing Law</h2>
+                <p>These Terms of Use shall be governed by and construed in accordance with the laws of the jurisdiction in which we operate, without regard to its conflict of law provisions.</p>
+              </section>
+              
+              <section className="mt-8">
+                <h2 className="text-2xl font-semibold mb-4">12. Contact Information</h2>
+                <p>If you have any questions about these Terms of Use, please contact us at:</p>
+                <p className="mt-2">Email: legal@ibex.ai</p>
+              </section>
+              
+              <div className="mt-12 flex flex-col md:flex-row gap-4">
+                <Button asChild variant="outline">
+                  <Link to="/privacy">Privacy Policy</Link>
+                </Button>
+                <Button asChild variant="outline">
+                  <Link to="/cookies">Cookie Policy</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
