@@ -14,6 +14,7 @@ const Footer: React.FC = () => {
           
           <div className="flex flex-wrap justify-center gap-6">
             {[
+              { name: 'Contact', path: '/contact' },
               { name: 'Terms', path: '/terms' },
               { name: 'Privacy', path: '/privacy' },
               { name: 'Cookies', path: '/cookies' }
