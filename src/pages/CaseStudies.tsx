@@ -33,9 +33,7 @@ const CaseStudies: React.FC = () => {
                 <div className="aspect-w-16 aspect-h-9 bg-secondary">
                   <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/20 to-accent/10">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                      </svg>
+                      <span className="text-2xl font-bold text-primary">1</span>
                     </div>
                   </div>
                 </div>
@@ -56,9 +54,7 @@ const CaseStudies: React.FC = () => {
                 <div className="aspect-w-16 aspect-h-9 bg-secondary">
                   <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/20 to-accent/10">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                      </svg>
+                      <span className="text-2xl font-bold text-primary">2</span>
                     </div>
                   </div>
                 </div>
@@ -79,9 +75,7 @@ const CaseStudies: React.FC = () => {
                 <div className="aspect-w-16 aspect-h-9 bg-secondary">
                   <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/20 to-accent/10">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                      </svg>
+                      <span className="text-2xl font-bold text-primary">3</span>
                     </div>
                   </div>
                 </div>
@@ -102,9 +96,7 @@ const CaseStudies: React.FC = () => {
                 <div className="aspect-w-16 aspect-h-9 bg-secondary">
                   <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/20 to-accent/10">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
+                      <span className="text-2xl font-bold text-primary">4</span>
                     </div>
                   </div>
                 </div>
