@@ -16,9 +16,7 @@ const Footer: React.FC = () => {
             {[
               { name: 'Terms', path: '/terms' },
               { name: 'Privacy', path: '/privacy' },
-              { name: 'Cookies', path: '/cookies' },
-              { name: 'License', path: '/license' },
-              { name: 'Sitemap', path: '/sitemap' }
+              { name: 'Cookies', path: '/cookies' }
             ].map((item) => (
               <Link 
                 key={item.name} 
