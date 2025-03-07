@@ -121,10 +121,10 @@ const Features: React.FC = () => {
             Powerful Capabilities
           </div>
           <h2 className={`text-3xl md:text-4xl font-display font-bold mb-4 ${isInView ? 'animate-fade-up delay-100' : 'opacity-0'}`}>
-            Everything you need to succeed
+          Smarter Marketing Powered by AI
           </h2>
           <p className={`text-lg text-muted-foreground ${isInView ? 'animate-fade-up delay-200' : 'opacity-0'}`}>
-            Our comprehensive suite of features is designed to streamline your business processes and drive growth.
+          At Ibex, we believe in the power of technology to make marketing more effective, efficient, and personalized. Our AI-driven platform takes the guesswork out of retention marketing, helping businesses make smarter decisions, reach the right players, and drive higher profits with less effort.
           </p>
         </div>
         
