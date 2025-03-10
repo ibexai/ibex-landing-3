@@ -78,7 +78,7 @@ const Privacy: React.FC = () => {
 
               <section className="mt-8">
                 <h2 className="text-2xl font-semibold mb-4">Contact us</h2>
-                <p>If you have any questions about this Privacy Policy or our site in general, please contact us at support@ibex.ai</p>
+                <p>If you have any questions about this Privacy Policy or our site in general, please contact us at info@ibex.ai</p>
                 <p className="mt-2">Written inquiries may be sent to:</p>
                 <p className="mt-2">
                   Ibex.ai<br />
