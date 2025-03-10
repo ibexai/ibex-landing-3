@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Button } from '@/components/ui/button';
 
 const CaseStudies: React.FC = () => {
   return (
@@ -123,9 +124,16 @@ const CaseStudies: React.FC = () => {
               <p className="text-xl text-muted-foreground mb-8">
                 Let's discuss how Ibex can work for you.
               </p>
-              <a href="/contact" className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 py-2">
+              <Button 
+                variant="subtle" 
+                size="lg" 
+                className="rounded-full px-8 py-6 text-base transition-all hover:shadow-md"
+                onClick={() => {
+                  window.location.href = '/contact';
+                }}
+              >
                 Get in Touch
-              </a>
+              </Button>
             </div>
           </div>
         </section>
