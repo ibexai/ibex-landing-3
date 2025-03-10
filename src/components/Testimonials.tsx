@@ -5,7 +5,7 @@ import { useInView, getAnimationClass } from '@/lib/animations';
 // Testimonial data
 const testimonials = [
   {
-    content: "We've tested IBEX next to our existing CRM solution and after 6 months decided to give 90% of all our campaigns to Ibex which has outperformed prior results by far.",
+    content: "We've tested Ibex next to our existing CRM solution and after 6 months decided to give 90% of all our campaigns to Ibex which has outperformed prior results by far.",
     author: "Ben Moody",
     role: "CMO",
     company: "Casimba",
