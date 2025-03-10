@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
@@ -44,7 +45,12 @@ const Hero: React.FC = () => {
             
             {/* CTA Buttons */}
             <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 ${getAnimationClass(isInView, 'fade-up', 300)}`}>
-              <Button size="lg" className="rounded-full px-8 py-6 text-base" onClick={scrollToContact}>
+              <Button 
+                variant="subtle" 
+                size="lg" 
+                className="rounded-full px-8 py-6 text-base transition-all hover:shadow-md" 
+                onClick={scrollToContact}
+              >
                 Get in Touch
               </Button>
             </div>

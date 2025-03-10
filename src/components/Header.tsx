@@ -38,9 +38,14 @@ const Header: React.FC = () => {
               {item.name}
             </Link>
           ))}
-          <Button variant="default" size="sm" className="ml-2 px-6 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => {
-            window.location.href = '/contact';
-          }}>
+          <Button 
+            variant="subtle" 
+            size="sm" 
+            className="ml-2 px-6 rounded-full text-primary-foreground transition-all hover:shadow-md" 
+            onClick={() => {
+              window.location.href = '/contact';
+            }}
+          >
             Get in Touch
           </Button>
         </nav>
@@ -80,9 +85,9 @@ const Header: React.FC = () => {
               </Link>
             ))}
             <Button 
-              variant="default" 
+              variant="subtle" 
               size="default" 
-              className="mt-4 w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="mt-4 w-full rounded-full transition-all hover:shadow-md"
               onClick={() => {
                 setMobileMenuOpen(false);
                 window.location.href = '/contact';
