@@ -3,7 +3,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useScrollToTop } from "./hooks/useScrollToTop";
 import Index from "./pages/Index";
 import HowItWorks from "./pages/HowItWorks";
 import Features from "./pages/Features";
@@ -19,6 +20,12 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Wrap the routes with a component that scrolls to top
+const ScrollToTop = ({ children }: { children: React.ReactNode }) => {
+  useScrollToTop();
+  return <>{children}</>;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -26,18 +33,18 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/terms" element={<Terms />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/cookies" element={<Cookies />} />
-          <Route path="/license" element={<License />} />
-          <Route path="/sitemap" element={<Sitemap />} />
-          <Route path="*" element={<NotFound />} />
+          <Route element={<ScrollToTop><Index /></ScrollToTop>} path="/" />
+          <Route element={<ScrollToTop><HowItWorks /></ScrollToTop>} path="/how-it-works" />
+          <Route element={<ScrollToTop><Features /></ScrollToTop>} path="/features" />
+          <Route element={<ScrollToTop><CaseStudies /></ScrollToTop>} path="/case-studies" />
+          <Route element={<ScrollToTop><Blog /></ScrollToTop>} path="/blog" />
+          <Route element={<ScrollToTop><Contact /></ScrollToTop>} path="/contact" />
+          <Route element={<ScrollToTop><Terms /></ScrollToTop>} path="/terms" />
+          <Route element={<ScrollToTop><Privacy /></ScrollToTop>} path="/privacy" />
+          <Route element={<ScrollToTop><Cookies /></ScrollToTop>} path="/cookies" />
+          <Route element={<ScrollToTop><License /></ScrollToTop>} path="/license" />
+          <Route element={<ScrollToTop><Sitemap /></ScrollToTop>} path="/sitemap" />
+          <Route element={<ScrollToTop><NotFound /></ScrollToTop>} path="*" />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
