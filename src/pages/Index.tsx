@@ -50,6 +50,23 @@ const Index = () => {
         <Testimonials />
         <ClientLogos />
         <Contact />
+        
+        {/* ISO Certification */}
+        <div className="container mx-auto px-4 md:px-6 py-8 flex flex-col items-center">
+          <a 
+            href="https://clients.britishassessment.com/verify.asp" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="transition-transform hover:scale-105"
+          >
+            <img 
+              src="https://cdn.prod.website-files.com/5ece6ad43b049e7047e1ea80/660e6770c43d03dd72cdde3b_27001%20RGB%20White.png" 
+              alt="ISO 27001 Certification" 
+              className="h-24 w-auto"
+            />
+          </a>
+          <p className="text-muted-foreground mt-2">Certificate No 224552</p>
+        </div>
       </main>
       <Footer />
     </div>
