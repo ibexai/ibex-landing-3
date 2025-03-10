@@ -63,7 +63,7 @@ const Privacy: React.FC = () => {
               <section className="mt-8">
                 <h2 className="text-2xl font-semibold mb-4">Marketing content and email subscriptions</h2>
                 <p>You may opt-in to receive communications from us about subjects that we believe may be of interest to you, as well as news or offers from us or third parties, which may include our newsletter or information about special offers, products or offerings, or other items. The communications maybe via email, SMS, telephone or social media.</p>
-                <p className="mt-2">The topic and frequency of our communications may change and if, at any time, you would like to stop receiving marketing communications from us, you may follow the opt-out instructions contained in any such communication. Alternatively, you can email us and request to opt-out at support@ibex.ai. If you opt-out of receiving marketing communications from us, we may still send you information about content you've downloaded or any services you have requested or received from us, or for other customer service purposes.</p>
+                <p className="mt-2">The topic and frequency of our communications may change and if, at any time, you would like to stop receiving marketing communications from us, you may follow the opt-out instructions contained in any such communication. Alternatively, you can email us and request to opt-out at info@ibex.ai. If you opt-out of receiving marketing communications from us, we may still send you information about content you've downloaded or any services you have requested or received from us, or for other customer service purposes.</p>
               </section>
 
               <section className="mt-8">
