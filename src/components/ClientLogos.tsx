@@ -76,7 +76,7 @@ const ClientLogos: React.FC = () => {
               rel="noopener noreferrer"
               className={`group flex items-center justify-center p-4 rounded-lg transition-all ${getAnimationClass(isInView, 'fade-up', 100 + index * 50)}`}
             >
-              <div className="w-full h-16 relative flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+              <div className="w-full h-16 relative flex items-center justify-center opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
                 <img 
                   src={client.logoUrl} 
                   alt={`${client.name} logo`} 
