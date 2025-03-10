@@ -6,7 +6,7 @@ const testimonials = [
   {
     content: "We’ve tested IBEX next to our existing CRM solution and after 6 months decided to give 90% of all our campaigns to Ibex which has outperformed prior results by far.",
     author: "Ben Moody",
-    role: "Head of Retention",
+    role: "CMO",
     company: "Casimba",
     image: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/headshots/benmoody.jpeg"
   },
