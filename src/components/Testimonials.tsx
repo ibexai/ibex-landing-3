@@ -1,10 +1,11 @@
+
 import React, { useRef, useState } from 'react';
 import { useInView, getAnimationClass } from '@/lib/animations';
 
 // Testimonial data
 const testimonials = [
   {
-    content: "We’ve tested IBEX next to our existing CRM solution and after 6 months decided to give 90% of all our campaigns to Ibex which has outperformed prior results by far.",
+    content: "We've tested IBEX next to our existing CRM solution and after 6 months decided to give 90% of all our campaigns to Ibex which has outperformed prior results by far.",
     author: "Ben Moody",
     role: "CMO",
     company: "Casimba",
@@ -73,7 +74,7 @@ const Testimonials: React.FC = () => {
                     key={index}
                     className="min-w-full p-2"
                   >
-                    <div className="glass-card p-8">
+                    <div className="bg-card/95 border border-border rounded-lg overflow-hidden p-8">
                       <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         fill="currentColor" 
@@ -113,7 +114,7 @@ const Testimonials: React.FC = () => {
             {/* Navigation Buttons */}
             <button 
               onClick={prevTestimonial}
-              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-primary/10 focus:outline-none"
+              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center shadow-md focus:outline-none"
               aria-label="Previous testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -123,7 +124,7 @@ const Testimonials: React.FC = () => {
             
             <button 
               onClick={nextTestimonial}
-              className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-border/20 flex items-center justify-center shadow-md btn-transition hover:bg-primary/10 focus:outline-none"
+              className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center shadow-md focus:outline-none"
               aria-label="Next testimonial"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
