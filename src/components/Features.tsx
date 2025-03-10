@@ -1,4 +1,3 @@
-
 import React, { useRef, useState, useEffect } from 'react';
 import { useInView, getStaggeredAnimation } from '@/lib/animations';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -145,7 +144,7 @@ const Features: React.FC = () => {
         </div>
         
         {/* Featured Carousel */}
-        <div className={`mt-20 ${isInView ? 'animate-fade-up delay-[600ms]' : 'opacity-0'}`}>
+        <div className={`mt-20 ${isInView ? 'animate-fade-up delay-700' : 'opacity-0'}`}>
           <div className="text-center mb-10">
             <div className="inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary">
               Featured

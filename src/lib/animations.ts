@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 
 // Intersection Observer Hook for scroll animations
@@ -37,6 +36,6 @@ export function getAnimationClass(isInView: boolean, animation: string = 'fade-u
 // Staggered animations for lists of items
 export function getStaggeredAnimation(isInView: boolean, index: number, baseDelay: number = 100) {
   const delay = baseDelay * index;
-  const delayClass = delay > 0 ? ` delay-[${delay}ms]` : '';
+  const delayClass = delay > 0 ? ' delay-[' + delay + 'ms]' : '';
   return isInView ? `animate-fade-up${delayClass}` : 'opacity-0';
 }

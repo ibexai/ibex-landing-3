@@ -5,44 +5,44 @@ import { useInView, getAnimationClass } from '@/lib/animations';
 // Client logo data
 const clients = [
   {
-    name: "TechVision",
-    logoUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/techvision"
+    name: "Casimba",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/casimba.svg?w=200&h=100&fit=crop&auto=format",
+    website: "https://casimbagaming.com/"
   },
   {
-    name: "Apex Solutions",
-    logoUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/apex"
+    name: "Easybet",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/easybet.png?w=200&h=100&fit=crop&auto=format",
+    website: "https://easybet.co.z"
   },
   {
-    name: "Quantum Systems",
-    logoUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/quantum"
+    name: "Aardvark",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/aardvark.jpeg?w=200&h=100&fit=crop&auto=format",
+    website: "https://adv.bet/"
   },
   {
-    name: "Nebula Innovations",
-    logoUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/nebula"
+    name: "Dream Veags",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/dreamvegas.webp?w=200&h=100&fit=crop&auto=format",
+    website: "https://casimbagaming.com/brand/dream-vegas/"
   },
   {
-    name: "Zenith Media",
-    logoUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/zenith"
+    name: "Lumi Casino",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/lumi.webp?w=200&h=100&fit=crop&auto=format",
+    website: "https://casimbagaming.com/brand/lumi-casino/"
   },
   {
-    name: "Vertex Networks",
-    logoUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/vertex"
+    name: "Grand Ivy",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/grandivy.png?w=200&h=100&fit=crop&auto=format",
+    website: "https://casimbagaming.com/brand/grand-ivy/"
   },
   {
-    name: "Horizon Labs",
-    logoUrl: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/horizon"
+    name: "Playbet",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/playbet.webp?w=200&h=100&fit=crop&auto=format",
+    website: "https://playbet.net/"
   },
   {
-    name: "Pulse Digital",
-    logoUrl: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=200&h=100&fit=crop&auto=format",
-    website: "https://example.com/pulse"
+    name: "Casilime",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/casilime.png?w=200&h=100&fit=crop&auto=format",
+    website: "https://casimbagaming.com/brand/casilime/"
   }
 ];
 
@@ -59,10 +59,10 @@ const ClientLogos: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className={`text-2xl md:text-3xl font-display font-bold mb-4 ${getAnimationClass(isInView, 'fade-up')}`}>
-            Trusted by leading companies
+            Trusted by leading iGaming companies worldwide
           </h2>
           <p className={`text-lg text-muted-foreground ${getAnimationClass(isInView, 'fade-up', 100)}`}>
-            Join the hundreds of businesses that rely on Ibex every day
+            Join the operators that rely on Ibex every day
           </p>
         </div>
         

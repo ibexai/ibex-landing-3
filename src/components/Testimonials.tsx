@@ -4,11 +4,11 @@ import { useInView, getAnimationClass } from '@/lib/animations';
 // Testimonial data
 const testimonials = [
   {
-    content: "Ibex has transformed how we manage our client projects. The automation features alone have saved us countless hours each month.",
-    author: "Sarah Johnson",
-    role: "Operations Director",
-    company: "Axis Design Co.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+    content: "We’ve tested IBEX next to our existing CRM solution and after 6 months decided to give 90% of all our campaigns to Ibex which has outperformed prior results by far.",
+    author: "Ben Moody",
+    role: "Head of Retention",
+    company: "Casimba",
+    image: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/headshots/benmoody.jpeg"
   },
   {
     content: "The intuitive interface makes it easy for our entire team to collaborate. We've seen a 40% increase in productivity since implementing Ibex.",
