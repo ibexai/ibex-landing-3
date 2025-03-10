@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -15,67 +14,69 @@ const Terms: React.FC = () => {
             <h1 className="text-4xl font-display font-bold mb-8">Terms of Use</h1>
             
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-muted-foreground">Last updated: July 2023</p>
+              <p className="text-muted-foreground">Last updated: March 10, 2025</p>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
-                <p>Welcome to Ibex. These Terms of Use govern your use of our website, applications, and services. Please read these terms carefully before using our services.</p>
+                <p>Ibex.ai Ltd, (hereinafter, "Ibex"), authorizes you to view, copy and print the materials at this website (hereinafter, the "Site") subject to the following terms and conditions:</p>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">2. Acceptance</h2>
-                <p>By accessing or using the Ibex platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you should not access or use our services.</p>
+                <h2 className="text-2xl font-semibold mb-4">Use of Site</h2>
+                <p>Except as expressly stated herein, you are authorized to view copy, and print the content of this Site subject to the following conditions:</p>
+                <ul className="list-disc pl-8 mt-2 space-y-1">
+                  <li>it is used only for your personal, informational, non-commercial purposes, you may not modify the materials at this site in any way or reproduce or publicly display, perform or distribute or otherwise use them for any public commercial purpose. Any use of this material on any other website for any purpose is prohibited</li>
+                  <li>any copy or portion must include the Ibex copyright and other proprietary notices</li>
+                  <li>no modifications or reproductions are made; and</li>
+                  <li>Ibex reserves the right to revoke such authorization at any time.</li>
+                </ul>
+                <p className="mt-2">The materials at this Site are copyrighted and any unauthorized use of any materials at this Site may violate copyright, trademark, and other laws. If you breach any of these Terms, your authorization to use this Site automatically terminates and you must immediately destroy any copied or printed materials.</p>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">3. Changes to the Terms</h2>
-                <p>We reserve the right to modify these Terms of Use at any time. Changes will be effective immediately upon posting to our website. Your continued use of our services after any changes indicates your acceptance of the modified terms.</p>
+                <h2 className="text-2xl font-semibold mb-4">Disclaimer</h2>
+                <p>All information (hereinafter, the "Information") posted on this Site is subject to change without notice. Ibex may make changes to the materials, products and services (hereinafter, the "Products") available at this Site, or to the prices described herein, at any time without notice. Our Site may contain references to Products that have not been announced in your country and Ibex retains the right to announce or make available such Products at its sole discretion. Please consult Ibex for information regarding the Products that may be available to you. Some of the Information on this Site may contain projections or other forward-looking statements regarding future events. We wish to caution you that these statements are only predictions and that actual events or results may differ materially.</p>
+                <p className="mt-2">Information, services and other material available through this Site are furnished "As Is" and "As Available" without any warranty whatsoever. Although Ibex has attempted to provide accurate Information on this Site, Ibex assumes no responsibility for the accuracy and completeness of the Information, Products or other material at this Site. All other warranties, express or implied, including any warranties of merchantability, fitness for any particular purpose, or non-infringement of intellectual property are specifically excluded and disclaimed. Ibex does not warrant that the Products will meet user's requirements, and that the operation of the services will be uninterrupted or error free, or that the Site or the server that makes it available are free of viruses or bugs.</p>
+                <p className="mt-2">Ibex's obligations with respect to its products and services are governed solely by the agreements under which they are provided and nothing on this Site should be construed to alter such agreements. The materials and services at this Site may be out of date, and Ibex makes no commitment to update the materials and services at this Site.</p>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">4. Registration and Account Security</h2>
-                <p>To access certain features of our platform, you may need to register for an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+                <h2 className="text-2xl font-semibold mb-4">Limitation of Liability</h2>
+                <p>In no event will Ibex, its suppliers, or other third parties mentioned at this Site be liable for any damages whatsoever (including, without limitation, those resulting from lost profits, lost savings, lost data, business interruption or other special, consequential or incidental damages) arising out of or relating to the use, inability to use, or the results of use of this Site, any websites linked to this site, or any materials, information, product or service contained at any or all such sites, whether based on warranty, contract, tort or any other legal theory and whether or not Ibex has been advised of the possibility of such loss or damages. If your use of the materials, Information or services from this Site results in the need for servicing, repair of correction of equipment or data, you assume all costs thereof.</p>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">5. Intellectual Property Rights</h2>
-                <p>The Ibex platform, including all content, features, and functionality, is owned by us and is protected by international copyright, trademark, patent, and other intellectual property laws.</p>
+                <h2 className="text-2xl font-semibold mb-4">Privacy Policy</h2>
+                <p>Ibex is committed to preserving your privacy. Read more on our <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link> page.</p>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">6. User Content</h2>
-                <p>You retain ownership of any content you submit to our platform. By submitting content, you grant us a worldwide, non-exclusive license to use, reproduce, modify, and display your content in connection with our services.</p>
+                <h2 className="text-2xl font-semibold mb-4">Intellectual Property</h2>
+                <p>All Intellectual Property referenced on the Site, including patents, copyrights, logos, trademarks and trade secrets are legally owned by Ibex or third parties. These rights apply to the Information, computer code of the web site, graphical design, products, company names, etc. All contents of this Site are protected by copyright and trademark rights, except as specifically permitted herein.</p>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">7. Prohibited Activities</h2>
-                <p>You agree not to use our platform for any unlawful purpose or in any way that could damage, disable, or impair our services. Prohibited activities include unauthorized access, data mining, and transmission of harmful code.</p>
+                <h2 className="text-2xl font-semibold mb-4">Links to Third-Party Websites</h2>
+                <p>Links on this Site to third-party websites are provided solely as a convenience to you. If you use these links, you will leave this Site. Ibex has not reviewed all of these third-party sites and does not control and is not responsible for any of these sites or their content. Thus, Ibex does not endorse or make any representations about them, or any information, software or other products or materials found there, or any results that may be obtained from using them. If you decide to access any of the third-party websites linked to this Site, you do this entirely at your own risk.</p>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">8. Data Protection and Privacy</h2>
-                <p>Our collection and use of personal information is governed by our Privacy Policy. By using our services, you consent to our data practices as described in our Privacy Policy.</p>
+                <h2 className="text-2xl font-semibold mb-4">Linking to this site</h2>
+                <p>You may create links to this Site from other sites, but only in accordance with the terms herein and in compliance with all applicable laws:</p>
+                <ul className="list-disc pl-8 mt-2 space-y-1">
+                  <li>The other site does not content that could be construed as distasteful, offensive or controversial, and contains only content that is appropriate for all age groups</li>
+                  <li>May link to but not replicate Ibex content</li>
+                  <li>Should not create a browser or border environment around Ibex content</li>
+                  <li>Should not imply that Ibex is endorsing it or its products</li>
+                  <li>Should not misrepresent its relationship with Ibex</li>
+                  <li>Should not present false information about Ibex products or services</li>
+                  <li>Should not use the Ibex logo or marks without permission from Ibex</li>
+                </ul>
               </section>
               
               <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">9. Termination</h2>
-                <p>We may terminate or suspend your access to our services immediately, without prior notice or liability, for any reason, including breach of these Terms of Use.</p>
-              </section>
-              
-              <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">10. Limitation of Liability</h2>
-                <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services.</p>
-              </section>
-              
-              <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">11. Governing Law</h2>
-                <p>These Terms of Use shall be governed by and construed in accordance with the laws of the jurisdiction in which we operate, without regard to its conflict of law provisions.</p>
-              </section>
-              
-              <section className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">12. Contact Information</h2>
-                <p>If you have any questions about these Terms of Use, please contact us at:</p>
-                <p className="mt-2">Email: legal@ibex.ai</p>
+                <h2 className="text-2xl font-semibold mb-4">General</h2>
+                <p>Ibex may revise these Terms at any time by updating this posting. You should visit this page from time to time to review the then-current Terms because they are binding on you. Certain provisions of these Terms may be superseded by expressly designated legal notices or terms located on particular pages at this Site.</p>
+                <p className="mt-2">If any term or provision of this Legal Notice is for any reason held to be invalid, such invalidity shall not affect any other term or provision, and this Legal Notice shall be interpreted as if such term or provision had never been contained in this Legal Notice.</p>
               </section>
               
               <div className="mt-12 flex flex-col md:flex-row gap-4">

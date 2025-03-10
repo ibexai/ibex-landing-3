@@ -13,7 +13,7 @@ const Cookies: React.FC = () => {
             <h1 className="text-4xl font-display font-bold mb-8">Cookie Policy</h1>
             
             <div className="prose prose-lg prose-invert">
-              <p className="text-muted-foreground">Last updated: April 15, 2023</p>
+              <p className="text-muted-foreground">Last updated: March 10, 2025</p>
               
               <h2 className="text-2xl font-semibold mt-8 mb-4">1. What Are Cookies</h2>
               <p>Cookies are small pieces of data stored on your device (computer or mobile device) when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the owners of the site.</p>
