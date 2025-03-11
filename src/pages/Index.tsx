@@ -48,7 +48,7 @@ const Index = () => {
       <div className="glow-overlay"></div>
       
       <Header />
-      <main className="pt-24 md:pt-28">
+      <main className="pt-16 md:pt-20">
         <Hero />
         <Features />
         <Testimonials />
