@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 
   return (
     <header 
-      className="fixed w-full top-0 z-50 bg-background border-b border-border/30 py-3 shadow-sm"
+      className="fixed w-full top-0 z-50 bg-background border-b border-border/30 py-4 shadow-sm"
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">

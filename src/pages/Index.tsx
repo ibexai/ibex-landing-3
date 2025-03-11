@@ -7,8 +7,12 @@ import Testimonials from '@/components/Testimonials';
 import ClientLogos from '@/components/ClientLogos';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 
 const Index = () => {
+  // Use the hook to scroll to top on route change
+  useScrollToTop();
+
   // Smooth scroll functionality for anchor links
   useEffect(() => {
     const handleAnchorClick = (e: MouseEvent) => {
@@ -44,7 +48,7 @@ const Index = () => {
       <div className="glow-overlay"></div>
       
       <Header />
-      <main>
+      <main className="pt-24 md:pt-28">
         <Hero />
         <Features />
         <Testimonials />
