@@ -17,7 +17,7 @@ const Header: React.FC = () => {
             <img 
               src="/lovable-uploads/3b77f73e-046e-4192-8154-4b6ac8915a65.png" 
               alt="Ibex Logo" 
-              className="h-8 md:h-10" 
+              className="h-10 md:h-14" 
             />
           </Link>
         </div>
