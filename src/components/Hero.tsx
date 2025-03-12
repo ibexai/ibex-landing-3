@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
@@ -106,7 +105,7 @@ const Hero: React.FC = () => {
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Base.png" 
               alt="Dashboard Base" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-2xl"
             />
           </div>
           
@@ -129,14 +128,14 @@ const Hero: React.FC = () => {
           <div 
             className="absolute inset-0 w-full h-full"
             style={{ 
-              transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -30}px)`,
+              transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -15}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-1.png" 
               alt="Feature Highlight" 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain px-4"
             />
           </div>
           
@@ -144,14 +143,14 @@ const Hero: React.FC = () => {
           <div 
             className="absolute inset-0 w-full h-full"
             style={{ 
-              transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 40}px)`,
+              transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 20}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-2.png" 
               alt="Feature Highlight" 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain px-4"
             />
           </div>
           
