@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
         >
           {/* Base layer - moves slowest */}
           <div 
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full scale-110"
             style={{ 
               transform: `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -10}px)`,
               transition: 'transform 0.1s ease-out'
@@ -106,13 +106,13 @@ const Hero: React.FC = () => {
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Base.png" 
               alt="Dashboard Base" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-2xl"
             />
           </div>
           
           {/* Phone layer - moves a bit faster */}
           <div 
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full scale-110"
             style={{ 
               transform: `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
               transition: 'transform 0.1s ease-out'
@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
           
           {/* Highlight 1 - moves faster */}
           <div 
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full scale-110"
             style={{ 
               transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -30}px)`,
               transition: 'transform 0.1s ease-out'
@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
           
           {/* Highlight 2 - moves fastest */}
           <div 
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full scale-110"
             style={{ 
               transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 40}px)`,
               transition: 'transform 0.1s ease-out'
