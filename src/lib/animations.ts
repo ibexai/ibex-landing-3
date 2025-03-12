@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 
 // Intersection Observer Hook for scroll animations
@@ -38,4 +39,12 @@ export function getStaggeredAnimation(isInView: boolean, index: number, baseDela
   const delay = baseDelay * index;
   const delayClass = delay > 0 ? ' delay-[' + delay + 'ms]' : '';
   return isInView ? `animate-fade-up${delayClass}` : 'opacity-0';
+}
+
+// Calculate parallax transformation
+export function getParallaxStyle(scrollY: number, speed: number) {
+  return {
+    transform: `translateY(${scrollY * speed}px)`,
+    transition: 'transform 0.1s ease-out'
+  };
 }

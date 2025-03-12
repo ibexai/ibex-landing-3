@@ -1,13 +1,27 @@
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
 
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
+  const parallaxContainerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(heroRef, {
     threshold: 0.1
   });
+  
+  // State to track scroll position for parallax effect
+  const [scrollY, setScrollY] = useState(0);
+
+  // Handle scroll for parallax effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
@@ -17,6 +31,7 @@ const Hero: React.FC = () => {
       });
     }
   };
+  
   return <>
       <section ref={heroRef} className="relative min-h-[80vh] flex flex-col items-center justify-center section-spacing pt-20 pb-0 overflow-hidden" id="hero">
         {/* Background Gradient Effect */}
@@ -62,34 +77,75 @@ const Hero: React.FC = () => {
           </div>
         </div>
         
-        {/* Dashboard Showcase - Now within the hero section */}
-        <div className="container mx-auto px-4 md:px-6 relative z-10 mt-4 w-full">
-          <div className={`max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-2xl ${getAnimationClass(isInView, 'scale-in', 500)}`}>
-            {/* Dashboard Image */}
-            <div className="relative bg-card overflow-hidden">
-              {/* The dashboard image */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10"></div>
-                <img 
-                  src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/dashboard.png" 
-                  alt="Ibex Dashboard" 
-                  className="w-full h-auto" 
-                />
-                
-                {/* Overlay Details */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent text-white">
-                </div>
-              </div>
-            </div>
+        {/* Parallax Images Section */}
+        <div 
+          ref={parallaxContainerRef} 
+          className="relative w-full max-w-6xl mx-auto mt-8 h-[500px] md:h-[600px] overflow-hidden rounded-2xl"
+        >
+          {/* Base layer - moves slowest */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: `translateY(${scrollY * 0.05}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Base.png" 
+              alt="Dashboard Base" 
+              className="w-full h-full object-cover"
+            />
           </div>
+          
+          {/* Phone layer - moves a bit faster */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: `translateY(${scrollY * -0.1}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Phone.png" 
+              alt="Mobile App" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          
+          {/* Highlight 1 - moves faster */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: `translateY(${scrollY * -0.15}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-1.png" 
+              alt="Feature Highlight" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          
+          {/* Highlight 2 - moves fastest */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: `translateY(${scrollY * -0.2}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-2.png" 
+              alt="Feature Highlight" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          
+          {/* Overlay gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-30 pointer-events-none"></div>
         </div>
-        
-        {/* Decorative Elements */}
-        
       </section>
-
-      {/* Dashboard Features Section - Now separate from the dashboard image */}
-      
     </>;
 };
 export default Hero;
