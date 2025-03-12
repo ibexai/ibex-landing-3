@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const CaseStudies: React.FC = () => {
   return (
@@ -39,14 +40,14 @@ const CaseStudies: React.FC = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Tech Solutions Inc.</h3>
+                  <h3 className="text-xl font-bold mb-2">Real-Time Automation</h3>
                   <p className="text-muted-foreground mb-4">Boosting operational efficiency by 45% through AI-powered analytics.</p>
-                  <a href="#" className="text-primary hover:underline inline-flex items-center">
+                  <Link to="/case-studies/real-time-automation" className="text-primary hover:underline inline-flex items-center">
                     Read Case Study
                     <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               
