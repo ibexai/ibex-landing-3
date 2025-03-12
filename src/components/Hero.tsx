@@ -97,9 +97,9 @@ const Hero: React.FC = () => {
         >
           {/* Base layer - moves slowest */}
           <div 
-            className="absolute inset-0 w-full h-full scale-110"
+            className="absolute inset-0 w-[120%] h-[120%] left-[-10%] top-[-10%]"
             style={{ 
-              transform: `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -10}px)`,
+              transform: `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -5}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
@@ -112,9 +112,9 @@ const Hero: React.FC = () => {
           
           {/* Phone layer - moves a bit faster */}
           <div 
-            className="absolute inset-0 w-full h-full scale-110"
+            className="absolute inset-0 w-[120%] h-[120%] left-[-10%] top-[-10%]"
             style={{ 
-              transform: `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
+              transform: `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 10}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
@@ -127,9 +127,9 @@ const Hero: React.FC = () => {
           
           {/* Highlight 1 - moves faster */}
           <div 
-            className="absolute inset-0 w-full h-full scale-110"
+            className="absolute inset-0 w-[120%] h-[120%] left-[-10%] top-[-10%]"
             style={{ 
-              transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -30}px)`,
+              transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -15}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
@@ -142,9 +142,9 @@ const Hero: React.FC = () => {
           
           {/* Highlight 2 - moves fastest */}
           <div 
-            className="absolute inset-0 w-full h-full scale-110"
+            className="absolute inset-0 w-[120%] h-[120%] left-[-10%] top-[-10%]"
             style={{ 
-              transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 40}px)`,
+              transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 20}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
