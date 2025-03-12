@@ -41,10 +41,18 @@ export function getStaggeredAnimation(isInView: boolean, index: number, baseDela
   return isInView ? `animate-fade-up${delayClass}` : 'opacity-0';
 }
 
-// Calculate parallax transformation
+// Calculate parallax transformation for scroll
 export function getParallaxStyle(scrollY: number, speed: number) {
   return {
     transform: `translateY(${scrollY * speed}px)`,
+    transition: 'transform 0.1s ease-out'
+  };
+}
+
+// Calculate combined parallax transformation for both scroll and mouse
+export function getMouseParallaxStyle(scrollY: number, mouseX: number, mouseY: number, scrollSpeed: number, mouseSpeed: number) {
+  return {
+    transform: `translateY(${scrollY * scrollSpeed}px) translateX(${mouseX * mouseSpeed}px)`,
     transition: 'transform 0.1s ease-out'
   };
 }

@@ -10,8 +10,9 @@ const Hero: React.FC = () => {
     threshold: 0.1
   });
   
-  // State to track scroll position for parallax effect
+  // State to track scroll position and mouse position for parallax effect
   const [scrollY, setScrollY] = useState(0);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   // Handle scroll for parallax effect
   useEffect(() => {
@@ -22,6 +23,17 @@ const Hero: React.FC = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
+  // Handle mouse move for parallax effect
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!parallaxContainerRef.current) return;
+    
+    const { left, top, width, height } = parallaxContainerRef.current.getBoundingClientRect();
+    const mouseX = (e.clientX - left) / width - 0.5; // -0.5 to 0.5
+    const mouseY = (e.clientY - top) / height - 0.5; // -0.5 to 0.5
+    
+    setMousePosition({ x: mouseX, y: mouseY });
+  };
 
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
@@ -81,12 +93,13 @@ const Hero: React.FC = () => {
         <div 
           ref={parallaxContainerRef} 
           className="relative w-full max-w-6xl mx-auto mt-8 h-[500px] md:h-[600px] overflow-hidden rounded-2xl"
+          onMouseMove={handleMouseMove}
         >
           {/* Base layer - moves slowest */}
           <div 
             className="absolute inset-0 w-full h-full"
             style={{ 
-              transform: `translateY(${scrollY * 0.05}px)`,
+              transform: `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -10}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
@@ -101,7 +114,7 @@ const Hero: React.FC = () => {
           <div 
             className="absolute inset-0 w-full h-full"
             style={{ 
-              transform: `translateY(${scrollY * -0.1}px)`,
+              transform: `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
@@ -116,7 +129,7 @@ const Hero: React.FC = () => {
           <div 
             className="absolute inset-0 w-full h-full"
             style={{ 
-              transform: `translateY(${scrollY * -0.15}px)`,
+              transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -30}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
@@ -131,7 +144,7 @@ const Hero: React.FC = () => {
           <div 
             className="absolute inset-0 w-full h-full"
             style={{ 
-              transform: `translateY(${scrollY * -0.2}px)`,
+              transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 40}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
