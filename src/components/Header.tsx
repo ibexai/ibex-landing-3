@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/3b77f73e-046e-4192-8154-4b6ac8915a65.png" 
+              src="/lovable-uploads/f57b7eae-49bc-4580-a10e-50a3ba7586ee.png" 
               alt="Ibex Logo" 
               className="h-12 md:h-16" 
             />
