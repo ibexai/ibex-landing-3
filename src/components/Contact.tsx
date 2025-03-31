@@ -157,7 +157,11 @@ const Contact: React.FC = () => {
                   ></textarea>
                 </div>
                 
-                <Button type="submit" className="w-full py-6 bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button 
+                  type="submit" 
+                  variant="default"
+                  className="w-full py-6 hover:bg-accent hover:text-accent-foreground"
+                >
                   Get in Touch
                 </Button>
                 
