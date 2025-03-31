@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -6,23 +7,23 @@
 
 @layer base {
   :root {
-    --background: 225, 14%, 7%;
-    --foreground: 0 0% 98%;
+    --background: 220, 14%, 95%;
+    --foreground: 225, 14%, 10%;
 
-    --card: 225, 14%, 10%;
-    --card-foreground: 0 0% 98%;
+    --card: 0, 0%, 100%;
+    --card-foreground: 225, 14%, 10%;
 
-    --popover: 220 10% 10%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0, 0%, 100%;
+    --popover-foreground: 225, 14%, 10%;
 
     --primary: 259, 90%, 62%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 220 10% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 220, 14%, 90%;
+    --secondary-foreground: 225, 14%, 10%;
 
-    --muted: 220 10% 15%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 220, 14%, 85%;
+    --muted-foreground: 225, 14%, 30%;
 
     --accent: 264, 98%, 71%;
     --accent-foreground: 0 0% 98%;
@@ -30,8 +31,8 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 12% 18%;
-    --input: 220 12% 18%;
+    --border: 220, 14%, 85%;
+    --input: 220, 14%, 85%;
     --ring: 259, 90%, 62%;
 
     --radius: 0.5rem;
@@ -54,7 +55,7 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: #1a1a20;
+    background-color: #f1f5f9;
     position: relative;
   }
 
@@ -67,8 +68,8 @@
     width: 100%;
     height: 100%;
     background-image: 
-      linear-gradient(to right, hsl(var(--primary) / 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--primary) / 0.05) 1px, transparent 1px);
+      linear-gradient(to right, hsl(var(--primary) / 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--primary) / 0.02) 1px, transparent 1px);
     background-size: 20px 20px;
     pointer-events: none;
     z-index: -3;
@@ -84,11 +85,11 @@
     height: 100%;
     background-image: 
       /* Horizontal lines */
-      linear-gradient(90deg, transparent 0%, transparent 30%, hsl(var(--primary) / 0.08) 30%, hsl(var(--primary) / 0.08) 31%, transparent 31%, transparent 50%,
-                      hsl(var(--primary) / 0.08) 50%, hsl(var(--primary) / 0.08) 51%, transparent 51%, transparent 80%, hsl(var(--primary) / 0.08) 80%, hsl(var(--primary) / 0.08) 81%, transparent 81%),
+      linear-gradient(90deg, transparent 0%, transparent 30%, hsl(var(--primary) / 0.05) 30%, hsl(var(--primary) / 0.05) 31%, transparent 31%, transparent 50%,
+                      hsl(var(--primary) / 0.05) 50%, hsl(var(--primary) / 0.05) 51%, transparent 51%, transparent 80%, hsl(var(--primary) / 0.05) 80%, hsl(var(--primary) / 0.05) 81%, transparent 81%),
       /* Vertical lines */
-      linear-gradient(0deg, transparent 0%, transparent 20%, hsl(var(--primary) / 0.08) 20%, hsl(var(--primary) / 0.08) 21%, transparent 21%, transparent 60%,
-                     hsl(var(--primary) / 0.08) 60%, hsl(var(--primary) / 0.08) 61%, transparent 61%, transparent 90%, hsl(var(--primary) / 0.08) 90%, hsl(var(--primary) / 0.08) 91%, transparent 91%);
+      linear-gradient(0deg, transparent 0%, transparent 20%, hsl(var(--primary) / 0.05) 20%, hsl(var(--primary) / 0.05) 21%, transparent 21%, transparent 60%,
+                     hsl(var(--primary) / 0.05) 60%, hsl(var(--primary) / 0.05) 61%, transparent 61%, transparent 90%, hsl(var(--primary) / 0.05) 90%, hsl(var(--primary) / 0.05) 91%, transparent 91%);
     background-size: 200px 200px;
     pointer-events: none;
     z-index: -2;
