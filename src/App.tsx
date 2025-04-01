@@ -10,6 +10,7 @@ import HowItWorks from "./pages/HowItWorks";
 import Features from "./pages/Features";
 import CaseStudies from "./pages/CaseStudies";
 import CaseStudy01 from "./pages/CaseStudy01";
+import RandomisedTrial from "./pages/RandomisedTrial";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Terms from "./pages/Terms";
@@ -39,6 +40,7 @@ const App = () => (
           <Route element={<ScrollToTop><Features /></ScrollToTop>} path="/features" />
           <Route element={<ScrollToTop><CaseStudies /></ScrollToTop>} path="/case-studies" />
           <Route element={<ScrollToTop><CaseStudy01 /></ScrollToTop>} path="/case-studies/real-time-automation" />
+          <Route element={<ScrollToTop><RandomisedTrial /></ScrollToTop>} path="/case-studies/randomised-trial" />
           <Route element={<ScrollToTop><Blog /></ScrollToTop>} path="/blog" />
           <Route element={<ScrollToTop><Contact /></ScrollToTop>} path="/contact" />
           <Route element={<ScrollToTop><Terms /></ScrollToTop>} path="/terms" />
