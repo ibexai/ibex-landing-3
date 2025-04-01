@@ -34,11 +34,16 @@ const CaseStudies: React.FC = () => {
               {/* Case Study 1 - Real-Time Automation */}
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:translate-y-[-5px]">
                 <div className="bg-secondary/40 p-6 flex items-center justify-center border-b">
-                  <img 
-                    src="/lovable-uploads/f57b7eae-49bc-4580-a10e-50a3ba7586ee.png" 
-                    alt="Ibex Logo" 
-                    className="h-16" 
-                  />
+                  <div className="h-20 w-20 rounded-full bg-primary/10 p-4 flex items-center justify-center">
+                    <svg viewBox="0 0 24 24" className="h-12 w-12 text-primary" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V12L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                      <path d="M5.63604 18.364C2.12132 14.8492 2.12132 9.15076 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.364C14.8492 21.8787 9.15076 21.8787 5.63604 18.364Z" stroke="currentColor" strokeWidth="2" />
+                      <path d="M16.5 7.5L16.5 7.505" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7.5 16.5L7.505 16.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7.5 7.5L7.505 7.505" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M16.5 16.5L16.505 16.505" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">Real-Time Automation</h3>
@@ -55,11 +60,15 @@ const CaseStudies: React.FC = () => {
               {/* Case Study 2 - Randomised Trial vs Optimove */}
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:translate-y-[-5px]">
                 <div className="bg-secondary/40 p-6 flex items-center justify-center border-b">
-                  <img 
-                    src="/lovable-uploads/f57b7eae-49bc-4580-a10e-50a3ba7586ee.png" 
-                    alt="Ibex Logo" 
-                    className="h-16" 
-                  />
+                  <div className="h-20 w-20 rounded-full bg-primary/10 p-4 flex items-center justify-center">
+                    <svg viewBox="0 0 24 24" className="h-12 w-12 text-primary" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 7L9 4L15 7L21 4V17L15 20L9 17L3 20V7Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M9 4V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M15 7V20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M21 12C19.8954 12 19 11.1046 19 10C19 8.89543 19.8954 8 21 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                      <path d="M3 15C4.10457 15 5 14.1046 5 13C5 11.8954 4.10457 11 3 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                  </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">Randomised Trial vs Optimove</h3>
