@@ -1,3 +1,4 @@
+
 import React, { useRef, useState, useEffect } from 'react';
 import { useInView, getStaggeredAnimation } from '@/lib/animations';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -195,21 +196,21 @@ const Features: React.FC = () => {
               </div>
             </div>
             
-            {/* Navigation Buttons */}
+            {/* Navigation Buttons - Updated to match Testimonials style */}
             <button 
               onClick={prevFeature} 
-              className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10 hover:bg-primary/20 transition-colors"
+              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center shadow-md focus:outline-none"
               aria-label="Previous feature"
             >
-              <ChevronLeft className="h-6 w-6" />
+              <ChevronLeft className="w-5 h-5" />
             </button>
             
             <button 
               onClick={nextFeature} 
-              className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 bg-card/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md border border-border/20 z-10 hover:bg-primary/20 transition-colors"
+              className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center shadow-md focus:outline-none"
               aria-label="Next feature"
             >
-              <ChevronRight className="h-6 w-6" />
+              <ChevronRight className="w-5 h-5" />
             </button>
             
             {/* Indicator Dots */}
