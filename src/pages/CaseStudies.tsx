@@ -36,12 +36,7 @@ const CaseStudies: React.FC = () => {
                 <div className="bg-secondary/40 p-6 flex items-center justify-center border-b">
                   <div className="h-20 w-20 rounded-full bg-primary/10 p-4 flex items-center justify-center">
                     <svg viewBox="0 0 24 24" className="h-12 w-12 text-primary" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 8V12L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                      <path d="M5.63604 18.364C2.12132 14.8492 2.12132 9.15076 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.364C14.8492 21.8787 9.15076 21.8787 5.63604 18.364Z" stroke="currentColor" strokeWidth="2" />
-                      <path d="M16.5 7.5L16.5 7.505" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M7.5 16.5L7.505 16.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M7.5 7.5L7.505 7.505" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M16.5 16.5L16.505 16.505" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M5.06152 12C5.55362 8.05369 8.92001 5 12.9996 5C17.4179 5 20.9996 8.58172 20.9996 13C20.9996 17.4183 17.4179 21 12.9996 21H8M13 13V9M11 3H15M3 15H8M5 18H10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                 </div>
