@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -56,8 +57,8 @@ const CaseStudies: React.FC = () => {
                 <div className="bg-secondary/40 p-6 flex items-center justify-center border-b">
                   <div className="h-20 w-20 rounded-full bg-primary/10 p-4 flex items-center justify-center">
                     <svg viewBox="0 0 24 24" className="h-12 w-12 text-primary" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 3V7M8 4L9 7.5M16 4L15 7.5M3 12H7M4 8L7.5 9M4 16L7.5 15M21 12H17M20 8L16.5 9M20 16L16.5 15M9 17C9 18.1046 10.3431 19 12 19C13.6569 19 15 18.1046 15 17C15 15.8954 13.6569 15 12 15C10.3431 15 9 15.8954 9 17Z" />
-                      <path d="M12 15V7" />
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 2a10 10 0 0 1 0 20" />
                     </svg>
                   </div>
                 </div>
