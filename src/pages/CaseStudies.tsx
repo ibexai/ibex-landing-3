@@ -57,8 +57,8 @@ const CaseStudies: React.FC = () => {
                 <div className="bg-secondary/40 p-6 flex items-center justify-center border-b">
                   <div className="h-20 w-20 rounded-full bg-primary/10 p-4 flex items-center justify-center">
                     <svg viewBox="0 0 24 24" className="h-12 w-12 text-primary" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="M12 2a10 10 0 0 1 0 20" />
+                      <path d="M7 12a5 5 0 1 1 0 .01" />
+                      <path d="M17 12a5 5 0 1 0 0 .01" />
                     </svg>
                   </div>
                 </div>
