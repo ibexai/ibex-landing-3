@@ -15,9 +15,9 @@ const clients = [
     website: "https://easybet.co.z"
   },
   {
-    name: "Aardvark",
-    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/aardvark.jpeg?w=200&h=100&fit=crop&auto=format",
-    website: "https://adv.bet/"
+    name: "Betway",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/betway.png?w=200&h=100&fit=crop&auto=format",
+    website: "https://betway.com"
   },
   {
     name: "Dream Veags",
@@ -31,7 +31,7 @@ const clients = [
   },
   {
     name: "Grand Ivy",
-    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/grandivy.png?w=200&h=100&fit=crop&auto=format",
+    logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/grandivy.webp?w=200&h=100&fit=crop&auto=format",
     website: "https://casimbagaming.com/brand/grand-ivy/"
   },
   {

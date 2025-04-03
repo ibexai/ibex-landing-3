@@ -64,25 +64,25 @@ const features = [
 // Featured carousel items
 const featuredItems = [
   {
-    title: "Unified Business Platform",
-    description: "Centralize your operations with our all-in-one platform that connects every aspect of your business. From customer management to financial reporting, everything works together seamlessly.",
-    features: ["Real-time collaboration", "Customizable workflows", "Comprehensive reporting", "Mobile accessibility"],
+    title: "Bottom-up rather than top-down",
+    description: "No need to use generic player segments. Ibex analyses the patterns of behaviour for each player and selects the best promo and template specifically for them.",
+    features: ["Complete personalisation of campaigns", "AI-driven selection of best marketing action", "No one-size fits all segmentation"],
     imageText: "Interactive Dashboard Preview",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop"
+    image: "https://images.pexels.com/photos/159275/macro-focus-cogwheel-gear-159275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1?q=80&w=1470&auto=format"
   },
   {
-    title: "AI-Powered Insights",
-    description: "Harness the power of artificial intelligence to uncover hidden patterns in your data and receive actionable recommendations tailored to your business objectives.",
-    features: ["Predictive analytics", "Automated reporting", "Custom AI models", "Trend forecasting"],
+    title: "iGaming first",
+    description: "Instead of using generic metrics to measure the success of campaigns, Ibex predicts and tracks the impact using gaming-specific modules.",
+    features: ["Bonus engine", "Large library of promo mechanics", "Understanding of iGaming metrics (GGR, NGR)"],
     imageText: "AI Analytics Dashboard",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1470&auto=format&fit=crop"
+    image: "https://images.pexels.com/photos/262333/pexels-photo-262333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1?q=80&w=1470&auto=format"
   },
   {
-    title: "Enterprise Collaboration Suite",
-    description: "Break down silos between departments with our comprehensive collaboration tools designed to keep your team connected and productive, no matter where they work.",
-    features: ["Team workspaces", "Document collaboration", "Video conferencing", "Task management"],
+    title: "Customised to your needs",
+    description: "All operators are different. Ibex is not a one-size-fits-all system: we will tailor our engine to your specific data, needs and goals, whether this is incorporating rev share data or setting up bespoke promo mechanics.",
+    features: ["Bespoke integration", "Tailored to your platform", "Custom features"],
     imageText: "Collaboration Workspace",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1470&auto=format&fit=crop"
+    image: "https://images.pexels.com/photos/394377/pexels-photo-394377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1?q=80&w=1470&auto=format"
   }
 ];
 
@@ -186,7 +186,7 @@ const Features: React.FC = () => {
                         <img 
                           src={item.image} 
                           alt={item.imageText} 
-                          className="w-full h-full object-cover"
+                          className="absolute inset-0 w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-l from-black/20 to-transparent"></div>
                       </div>
