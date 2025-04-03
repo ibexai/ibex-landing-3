@@ -42,7 +42,7 @@ const CaseStudies: React.FC = () => {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">Real-Time Automation</h3>
-                  <p className="text-muted-foreground mb-4">Boosting operational efficiency by 45% through AI-powered analytics.</p>
+                  <p className="text-muted-foreground mb-4">Boosting FTD conversion rates by 30% by delivering personalised welcome bonuses to players seconds after their deposits.</p>
                   <Link to="/case-studies/real-time-automation" className="text-primary hover:underline inline-flex items-center">
                     Read Case Study
                     <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@ const CaseStudies: React.FC = () => {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">Randomised Trial vs Optimove</h3>
-                  <p className="text-muted-foreground mb-4">A comparative study showing 23% better retention metrics with Ibex.</p>
+                  <p className="text-muted-foreground mb-4">Proving the benefits of a completely personalised approach by delivering 20% NGR uplift over segmentation-based campaigns.</p>
                   <Link to="/case-studies/randomised-trial" className="text-primary hover:underline inline-flex items-center">
                     Read Case Study
                     <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
