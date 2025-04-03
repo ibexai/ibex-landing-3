@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -6,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
-const RandomisedTrial: React.FC = () => {
+const CaseStudy02: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Background elements */}
@@ -222,4 +221,4 @@ const RandomisedTrial: React.FC = () => {
   );
 };
 
-export default RandomisedTrial;
+export default CaseStudy02;
