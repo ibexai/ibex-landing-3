@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -256,88 +255,91 @@ const CaseStudy02: React.FC = () => {
                       player values across the board.
                     </p>
                     
-                    {/* Updated NGR Uplift Chart - Simpler bar style */}
+                    {/* Updated NGR Uplift Chart - Standard bars with improved percentage indicators */}
                     <div className="bg-card/80 border border-border/30 rounded-lg p-6 mb-6">
                       <h4 className="text-lg font-semibold text-center mb-6">NGR Uplift</h4>
                       
                       <div className="grid grid-cols-3 gap-8">
+                        {/* New players column */}
                         <div className="flex flex-col items-center">
-                          <div className="text-center mb-3">
-                            <span className="px-3 py-1 bg-secondary/10 text-secondary font-semibold rounded-md">+11%</span>
+                          <div className="text-xl font-bold text-primary mb-3">
+                            +11%
                           </div>
-                          <div className="w-full flex justify-center space-x-4">
+                          <div className="flex items-end h-64 space-x-6">
                             <div className="flex flex-col items-center">
-                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
-                                <div className="w-full h-[50%] bg-secondary/20 border border-secondary/30 flex items-center justify-center">
-                                  <span className="text-xs font-semibold">100</span>
+                              <div className="w-16 bg-secondary rounded-t-md" style={{ height: '180px' }}>
+                                <div className="h-full flex items-center justify-center">
+                                  <span className="font-semibold">100</span>
                                 </div>
                               </div>
-                              <span className="mt-2 text-xs text-muted-foreground">Traditional</span>
+                              <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
-                                <div className="w-full h-[55.5%] bg-secondary border border-secondary/50 flex items-center justify-center">
-                                  <span className="text-xs font-semibold text-secondary-foreground">111</span>
+                              <div className="w-16 bg-primary/30 rounded-t-md" style={{ height: '200px' }}>
+                                <div className="h-full flex items-center justify-center">
+                                  <span className="font-semibold">111</span>
                                 </div>
                               </div>
-                              <span className="mt-2 text-xs text-muted-foreground">Ibex</span>
+                              <span className="mt-2 text-sm text-muted-foreground">Ibex</span>
                             </div>
                           </div>
-                          <div className="mt-3 text-sm font-medium">New</div>
+                          <div className="mt-4 text-sm font-medium">New</div>
                         </div>
                         
+                        {/* Retained players column */}
                         <div className="flex flex-col items-center">
-                          <div className="text-center mb-3">
-                            <span className="px-3 py-1 bg-secondary/10 text-secondary font-semibold rounded-md">+20%</span>
+                          <div className="text-xl font-bold text-primary mb-3">
+                            +20%
                           </div>
-                          <div className="w-full flex justify-center space-x-4">
+                          <div className="flex items-end h-64 space-x-6">
                             <div className="flex flex-col items-center">
-                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
-                                <div className="w-full h-[50%] bg-secondary/20 border border-secondary/30 flex items-center justify-center">
-                                  <span className="text-xs font-semibold">100</span>
+                              <div className="w-16 bg-secondary rounded-t-md" style={{ height: '180px' }}>
+                                <div className="h-full flex items-center justify-center">
+                                  <span className="font-semibold">100</span>
                                 </div>
                               </div>
-                              <span className="mt-2 text-xs text-muted-foreground">Traditional</span>
+                              <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
-                                <div className="w-full h-[60%] bg-secondary border border-secondary/50 flex items-center justify-center">
-                                  <span className="text-xs font-semibold text-secondary-foreground">120</span>
+                              <div className="w-16 bg-primary/30 rounded-t-md" style={{ height: '216px' }}>
+                                <div className="h-full flex items-center justify-center">
+                                  <span className="font-semibold">120</span>
                                 </div>
                               </div>
-                              <span className="mt-2 text-xs text-muted-foreground">Ibex</span>
+                              <span className="mt-2 text-sm text-muted-foreground">Ibex</span>
                             </div>
                           </div>
-                          <div className="mt-3 text-sm font-medium">Retained</div>
+                          <div className="mt-4 text-sm font-medium">Retained</div>
                         </div>
                         
+                        {/* Reactivated players column */}
                         <div className="flex flex-col items-center">
-                          <div className="text-center mb-3">
-                            <span className="px-3 py-1 bg-secondary/10 text-secondary font-semibold rounded-md">+7%</span>
+                          <div className="text-xl font-bold text-primary mb-3">
+                            +7%
                           </div>
-                          <div className="w-full flex justify-center space-x-4">
+                          <div className="flex items-end h-64 space-x-6">
                             <div className="flex flex-col items-center">
-                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
-                                <div className="w-full h-[50%] bg-secondary/20 border border-secondary/30 flex items-center justify-center">
-                                  <span className="text-xs font-semibold">100</span>
+                              <div className="w-16 bg-secondary rounded-t-md" style={{ height: '180px' }}>
+                                <div className="h-full flex items-center justify-center">
+                                  <span className="font-semibold">100</span>
                                 </div>
                               </div>
-                              <span className="mt-2 text-xs text-muted-foreground">Traditional</span>
+                              <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
-                                <div className="w-full h-[53.5%] bg-secondary border border-secondary/50 flex items-center justify-center">
-                                  <span className="text-xs font-semibold text-secondary-foreground">107</span>
+                              <div className="w-16 bg-primary/30 rounded-t-md" style={{ height: '193px' }}>
+                                <div className="h-full flex items-center justify-center">
+                                  <span className="font-semibold">107</span>
                                 </div>
                               </div>
-                              <span className="mt-2 text-xs text-muted-foreground">Ibex</span>
+                              <span className="mt-2 text-sm text-muted-foreground">Ibex</span>
                             </div>
                           </div>
-                          <div className="mt-3 text-sm font-medium">Reactivated</div>
+                          <div className="mt-4 text-sm font-medium">Reactivated</div>
                         </div>
                       </div>
                       
-                      <div className="text-xs text-center text-muted-foreground mt-6">
+                      <div className="text-xs text-center text-muted-foreground mt-8">
                         Traditional CRM performance provided as a benchmark = 100
                       </div>
                     </div>
