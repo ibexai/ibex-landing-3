@@ -110,7 +110,7 @@ const CaseStudy01: React.FC = () => {
                     <h3 className="font-bold text-foreground mb-2">Cumulative Registrations</h3>
                     <div className="text-sm text-muted-foreground mb-4">Figures normalized from a base of 1,000 in April 2023</div>
                     <div className="h-[300px] w-full">
-                      <svg className="chart-svg" viewBox="0 0 550 250" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="chart-svg" viewBox="0 0 550 270" xmlns="http://www.w3.org/2000/svg">
                         {/* Grid lines */}
                         <line x1="50" y1="200" x2="500" y2="200" stroke="#E5E7EB" strokeWidth="1" />
                         <line x1="50" y1="150" x2="500" y2="150" stroke="#E5E7EB" strokeWidth="1" />
@@ -118,24 +118,25 @@ const CaseStudy01: React.FC = () => {
                         <line x1="50" y1="50" x2="500" y2="50" stroke="#E5E7EB" strokeWidth="1" />
                         
                         {/* Y-axis labels */}
-                        <text x="40" y="200" textAnchor="end" fontSize="12" fill="#6B7280">0k</text>
-                        <text x="40" y="150" textAnchor="end" fontSize="12" fill="#6B7280">50k</text>
-                        <text x="40" y="100" textAnchor="end" fontSize="12" fill="#6B7280">100k</text>
-                        <text x="40" y="50" textAnchor="end" fontSize="12" fill="#6B7280">150k</text>
-                        <text x="40" y="0" textAnchor="end" fontSize="12" fill="#6B7280">200k</text>
+                        <text x="40" y="200" textAnchor="end" fontSize="14" fill="#6B7280">0k</text>
+                        <text x="40" y="150" textAnchor="end" fontSize="14" fill="#6B7280">50k</text>
+                        <text x="40" y="100" textAnchor="end" fontSize="14" fill="#6B7280">100k</text>
+                        <text x="40" y="50" textAnchor="end" fontSize="14" fill="#6B7280">150k</text>
+                        <text x="40" y="0" textAnchor="end" fontSize="14" fill="#6B7280">200k</text>
                         
                         {/* X-axis labels */}
-                        <text x="50" y="220" textAnchor="middle" fontSize="12" fill="#6B7280">Apr '23</text>
-                        <text x="125" y="220" textAnchor="middle" fontSize="12" fill="#6B7280">Aug '23</text>
-                        <text x="200" y="220" textAnchor="middle" fontSize="12" fill="#6B7280">Dec '23</text>
-                        <text x="275" y="220" textAnchor="middle" fontSize="12" fill="#6B7280">Apr '24</text>
-                        <text x="350" y="220" textAnchor="middle" fontSize="12" fill="#6B7280">Aug '24</text>
-                        <text x="425" y="220" textAnchor="middle" fontSize="12" fill="#6B7280">Dec '24</text>
-                        <text x="481.25" y="220" textAnchor="middle" fontSize="12" fill="#6B7280">Mar '25</text>
+                        <text x="50" y="220" textAnchor="middle" fontSize="14" fill="#6B7280">Apr '23</text>
+                        <text x="125" y="220" textAnchor="middle" fontSize="14" fill="#6B7280">Aug '23</text>
+                        <text x="200" y="220" textAnchor="middle" fontSize="14" fill="#6B7280">Dec '23</text>
+                        <text x="275" y="220" textAnchor="middle" fontSize="14" fill="#6B7280">Apr '24</text>
+                        <text x="350" y="220" textAnchor="middle" fontSize="14" fill="#6B7280">Aug '24</text>
+                        <text x="425" y="220" textAnchor="middle" fontSize="14" fill="#6B7280">Dec '24</text>
+                        <text x="481.25" y="220" textAnchor="middle" fontSize="14" fill="#6B7280">Mar '25</text>
                         
                         {/* Vertical automation reference line */}
                         <line x1="200" y1="0" x2="200" y2="200" stroke="#10B981" strokeWidth="2" strokeDasharray="4" />
-                        <text x="200" y="240" textAnchor="middle" fontSize="12" fill="#10B981" fontWeight="600">Automation Point</text>
+                        <rect x="155" y="10" width="90" height="22" fill="#f1f5f9" rx="3" />
+                        <text x="200" y="25" textAnchor="middle" fontSize="14" fill="#10B981" fontWeight="600">Automation Point</text>
                         
                         {/* Before automation line */}
                         <polyline 
@@ -160,16 +161,6 @@ const CaseStudy01: React.FC = () => {
                         {/* Automation point marker */}
                         <circle cx="200" cy="167.694" r="6" fill="#10B981" />
                       </svg>
-                    </div>
-                    <div className="flex justify-center gap-6 mt-4">
-                      <div className="flex items-center">
-                        <div className="w-3 h-3 bg-gray-400 rounded mr-2"></div>
-                        <span className="text-sm">Before</span>
-                      </div>
-                      <div className="flex items-center">
-                        <div className="w-3 h-3 bg-primary rounded mr-2"></div>
-                        <span className="text-sm">After</span>
-                      </div>
                     </div>
                   </div>
 
@@ -217,51 +208,52 @@ const CaseStudy01: React.FC = () => {
                   <div className="bg-card/95 border border-border rounded-lg overflow-hidden p-6 mb-8">
                     <h3 className="font-bold text-foreground mb-2">FTD Conversion Rate</h3>
                     <div className="text-sm text-muted-foreground mb-4">April 2023 - March 2025</div>
-                    <div className="h-[450px] w-full">
-                      <svg className="chart-svg" viewBox="0 0 850 350" preserveAspectRatio="xMidYMid meet">
+                    <div className="h-[300px] w-full">
+                      <svg className="chart-svg" viewBox="0 0 850 300" preserveAspectRatio="xMidYMid meet">
                         {/* Grid lines */}
-                        <line x1="60" y1="300" x2="800" y2="300" stroke="#E5E7EB" strokeWidth="1" />
-                        <line x1="60" y1="225" x2="800" y2="225" stroke="#E5E7EB" strokeWidth="1" />
-                        <line x1="60" y1="150" x2="800" y2="150" stroke="#E5E7EB" strokeWidth="1" />
-                        <line x1="60" y1="75" x2="800" y2="75" stroke="#E5E7EB" strokeWidth="1" />
+                        <line x1="60" y1="275" x2="800" y2="275" stroke="#E5E7EB" strokeWidth="1" />
+                        <line x1="60" y1="206" x2="800" y2="206" stroke="#E5E7EB" strokeWidth="1" />
+                        <line x1="60" y1="137" x2="800" y2="137" stroke="#E5E7EB" strokeWidth="1" />
+                        <line x1="60" y1="68" x2="800" y2="68" stroke="#E5E7EB" strokeWidth="1" />
                         <line x1="60" y1="0" x2="800" y2="0" stroke="#E5E7EB" strokeWidth="1" />
                         
                         {/* Y-axis labels */}
-                        <text x="50" y="305" textAnchor="end" fontSize="12" fill="#6B7280">0%</text>
-                        <text x="50" y="230" textAnchor="end" fontSize="12" fill="#6B7280">15%</text>
-                        <text x="50" y="155" textAnchor="end" fontSize="12" fill="#6B7280">30%</text>
-                        <text x="50" y="80" textAnchor="end" fontSize="12" fill="#6B7280">45%</text>
-                        <text x="50" y="5" textAnchor="end" fontSize="12" fill="#6B7280">60%</text>
+                        <text x="45" y="280" textAnchor="end" fontSize="14" fill="#6B7280">0%</text>
+                        <text x="45" y="211" textAnchor="end" fontSize="14" fill="#6B7280">15%</text>
+                        <text x="45" y="142" textAnchor="end" fontSize="14" fill="#6B7280">30%</text>
+                        <text x="45" y="73" textAnchor="end" fontSize="14" fill="#6B7280">45%</text>
+                        <text x="45" y="10" textAnchor="end" fontSize="14" fill="#6B7280">60%</text>
                         
                         {/* X-axis labels */}
-                        <line x1="60" y1="300" x2="60" y2="305" stroke="#E5E7EB" strokeWidth="1" />
-                        <text x="60" y="320" textAnchor="middle" fontSize="12" fill="#6B7280">Apr 23</text>
+                        <line x1="60" y1="275" x2="60" y2="280" stroke="#E5E7EB" strokeWidth="1" />
+                        <text x="60" y="294" textAnchor="middle" fontSize="14" fill="#6B7280">Apr 23</text>
                         
-                        <line x1="180" y1="300" x2="180" y2="305" stroke="#E5E7EB" strokeWidth="1" />
-                        <text x="180" y="320" textAnchor="middle" fontSize="12" fill="#6B7280">Aug 23</text>
+                        <line x1="180" y1="275" x2="180" y2="280" stroke="#E5E7EB" strokeWidth="1" />
+                        <text x="180" y="294" textAnchor="middle" fontSize="14" fill="#6B7280">Aug 23</text>
                         
-                        <line x1="300" y1="300" x2="300" y2="305" stroke="#E5E7EB" strokeWidth="1" />
-                        <text x="300" y="320" textAnchor="middle" fontSize="12" fill="#6B7280" fontWeight="bold">Dec 23</text>
+                        <line x1="300" y1="275" x2="300" y2="280" stroke="#E5E7EB" strokeWidth="1" />
+                        <text x="300" y="294" textAnchor="middle" fontSize="14" fill="#6B7280" fontWeight="bold">Dec 23</text>
                         
-                        <line x1="420" y1="300" x2="420" y2="305" stroke="#E5E7EB" strokeWidth="1" />
-                        <text x="420" y="320" textAnchor="middle" fontSize="12" fill="#6B7280">Apr 24</text>
+                        <line x1="420" y1="275" x2="420" y2="280" stroke="#E5E7EB" strokeWidth="1" />
+                        <text x="420" y="294" textAnchor="middle" fontSize="14" fill="#6B7280">Apr 24</text>
                         
-                        <line x1="540" y1="300" x2="540" y2="305" stroke="#E5E7EB" strokeWidth="1" />
-                        <text x="540" y="320" textAnchor="middle" fontSize="12" fill="#6B7280">Aug 24</text>
+                        <line x1="540" y1="275" x2="540" y2="280" stroke="#E5E7EB" strokeWidth="1" />
+                        <text x="540" y="294" textAnchor="middle" fontSize="14" fill="#6B7280">Aug 24</text>
                         
-                        <line x1="660" y1="300" x2="660" y2="305" stroke="#E5E7EB" strokeWidth="1" />
-                        <text x="660" y="320" textAnchor="middle" fontSize="12" fill="#6B7280">Dec 24</text>
+                        <line x1="660" y1="275" x2="660" y2="280" stroke="#E5E7EB" strokeWidth="1" />
+                        <text x="660" y="294" textAnchor="middle" fontSize="14" fill="#6B7280">Dec 24</text>
                         
-                        <line x1="780" y1="300" x2="780" y2="305" stroke="#E5E7EB" strokeWidth="1" />
-                        <text x="780" y="320" textAnchor="middle" fontSize="12" fill="#6B7280">Mar 25</text>
+                        <line x1="780" y1="275" x2="780" y2="280" stroke="#E5E7EB" strokeWidth="1" />
+                        <text x="780" y="294" textAnchor="middle" fontSize="14" fill="#6B7280">Mar 25</text>
                         
                         {/* Vertical automation reference line */}
-                        <line x1="300" y1="0" x2="300" y2="300" stroke="#10B981" strokeWidth="2" strokeDasharray="4" />
-                        <text x="300" y="340" textAnchor="middle" fontSize="12" fill="#10B981" fontWeight="600">Automation Point</text>
+                        <line x1="300" y1="0" x2="300" y2="275" stroke="#10B981" strokeWidth="2" strokeDasharray="4" />
+                        <rect x="255" y="10" width="90" height="22" fill="#f1f5f9" rx="3" />
+                        <text x="300" y="25" textAnchor="middle" fontSize="14" fill="#10B981" fontWeight="600">Automation Point</text>
                         
                         {/* Line before automation */}
                         <polyline 
-                          points="60,249 90,249 120,196.5 150,147 180,181.5 210,177 240,172.5 270,147 300,138" 
+                          points="60,228 90,228 120,180 150,134 180,166 210,162 240,158 270,134 300,126" 
                           fill="none" 
                           stroke="#9CA3AF" 
                           strokeWidth="2.5"
@@ -271,7 +263,7 @@ const CaseStudy01: React.FC = () => {
                         
                         {/* Line after automation */}
                         <polyline 
-                          points="300,138 330,147 360,147 390,115.5 420,121.5 450,127.5 480,142.5 510,138 540,142.5 570,142.5 600,142.5 630,121.5 660,75 690,105 720,105 750,96" 
+                          points="300,126 330,134 360,134 390,106 420,111 450,116 480,130 510,126 540,130 570,130 600,130 630,111 660,69 690,96 720,96 750,88" 
                           fill="none" 
                           stroke="#10B981" 
                           strokeWidth="2.5"
@@ -280,42 +272,32 @@ const CaseStudy01: React.FC = () => {
                         />
                         
                         {/* Data points */}
-                        <circle cx="60" cy="249" r="4" fill="#9CA3AF" />
-                        <circle cx="90" cy="249" r="4" fill="#9CA3AF" />
-                        <circle cx="120" cy="196.5" r="4" fill="#9CA3AF" />
-                        <circle cx="150" cy="147" r="4" fill="#9CA3AF" />
-                        <circle cx="180" cy="181.5" r="4" fill="#9CA3AF" />
-                        <circle cx="210" cy="177" r="4" fill="#9CA3AF" />
-                        <circle cx="240" cy="172.5" r="4" fill="#9CA3AF" />
-                        <circle cx="270" cy="147" r="4" fill="#9CA3AF" />
-                        <circle cx="300" cy="138" r="6" fill="#10B981" />
+                        <circle cx="60" cy="228" r="4" fill="#9CA3AF" />
+                        <circle cx="90" cy="228" r="4" fill="#9CA3AF" />
+                        <circle cx="120" cy="180" r="4" fill="#9CA3AF" />
+                        <circle cx="150" cy="134" r="4" fill="#9CA3AF" />
+                        <circle cx="180" cy="166" r="4" fill="#9CA3AF" />
+                        <circle cx="210" cy="162" r="4" fill="#9CA3AF" />
+                        <circle cx="240" cy="158" r="4" fill="#9CA3AF" />
+                        <circle cx="270" cy="134" r="4" fill="#9CA3AF" />
+                        <circle cx="300" cy="126" r="6" fill="#10B981" />
                         
-                        <circle cx="330" cy="147" r="4" fill="#10B981" />
-                        <circle cx="360" cy="147" r="4" fill="#10B981" />
-                        <circle cx="390" cy="115.5" r="4" fill="#10B981" />
-                        <circle cx="420" cy="121.5" r="4" fill="#10B981" />
-                        <circle cx="450" cy="127.5" r="4" fill="#10B981" />
-                        <circle cx="480" cy="142.5" r="4" fill="#10B981" />
-                        <circle cx="510" cy="138" r="4" fill="#10B981" />
-                        <circle cx="540" cy="142.5" r="4" fill="#10B981" />
-                        <circle cx="570" cy="142.5" r="4" fill="#10B981" />
-                        <circle cx="600" cy="142.5" r="4" fill="#10B981" />
-                        <circle cx="630" cy="121.5" r="4" fill="#10B981" />
-                        <circle cx="660" cy="75" r="4" fill="#10B981" />
-                        <circle cx="690" cy="105" r="4" fill="#10B981" />
-                        <circle cx="720" cy="105" r="4" fill="#10B981" />
-                        <circle cx="750" cy="96" r="4" fill="#10B981" />
+                        <circle cx="330" cy="134" r="4" fill="#10B981" />
+                        <circle cx="360" cy="134" r="4" fill="#10B981" />
+                        <circle cx="390" cy="106" r="4" fill="#10B981" />
+                        <circle cx="420" cy="111" r="4" fill="#10B981" />
+                        <circle cx="450" cy="116" r="4" fill="#10B981" />
+                        <circle cx="480" cy="130" r="4" fill="#10B981" />
+                        <circle cx="510" cy="126" r="4" fill="#10B981" />
+                        <circle cx="540" cy="130" r="4" fill="#10B981" />
+                        <circle cx="570" cy="130" r="4" fill="#10B981" />
+                        <circle cx="600" cy="130" r="4" fill="#10B981" />
+                        <circle cx="630" cy="111" r="4" fill="#10B981" />
+                        <circle cx="660" cy="69" r="4" fill="#10B981" />
+                        <circle cx="690" cy="96" r="4" fill="#10B981" />
+                        <circle cx="720" cy="96" r="4" fill="#10B981" />
+                        <circle cx="750" cy="88" r="4" fill="#10B981" />
                       </svg>
-                    </div>
-                    <div className="flex justify-center gap-6 mt-4">
-                      <div className="flex items-center">
-                        <div className="w-3 h-3 bg-gray-400 rounded mr-2"></div>
-                        <span className="text-sm">Before Automation</span>
-                      </div>
-                      <div className="flex items-center">
-                        <div className="w-3 h-3 bg-primary rounded mr-2"></div>
-                        <span className="text-sm">After Automation</span>
-                      </div>
                     </div>
                   </div>
                 </section>

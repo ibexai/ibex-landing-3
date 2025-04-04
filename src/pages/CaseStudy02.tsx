@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -276,7 +275,7 @@ const CaseStudy02: React.FC = () => {
                               <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="w-16 bg-primary/30 rounded-t-md shadow-lg shadow-primary/20 ring-2 ring-primary/40" style={{ height: '200px' }}>
+                              <div className="w-16 bg-purple-500 rounded-t-md shadow-lg shadow-purple-300 ring-2 ring-purple-600" style={{ height: '200px' }}>
                                 <div className="h-full flex items-center justify-center">
                                   <span className="font-semibold">111</span>
                                 </div>
@@ -302,7 +301,7 @@ const CaseStudy02: React.FC = () => {
                               <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="w-16 bg-primary/30 rounded-t-md shadow-lg shadow-primary/20 ring-2 ring-primary/40" style={{ height: '216px' }}>
+                              <div className="w-16 bg-purple-500 rounded-t-md shadow-lg shadow-purple-300 ring-2 ring-purple-600" style={{ height: '216px' }}>
                                 <div className="h-full flex items-center justify-center">
                                   <span className="font-semibold">120</span>
                                 </div>
@@ -328,7 +327,7 @@ const CaseStudy02: React.FC = () => {
                               <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="w-16 bg-primary/30 rounded-t-md shadow-lg shadow-primary/20 ring-2 ring-primary/40" style={{ height: '193px' }}>
+                              <div className="w-16 bg-purple-500 rounded-t-md shadow-lg shadow-purple-300 ring-2 ring-purple-600" style={{ height: '193px' }}>
                                 <div className="h-full flex items-center justify-center">
                                   <span className="font-semibold">107</span>
                                 </div>

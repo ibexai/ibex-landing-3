@@ -10,21 +10,21 @@ const testimonials = [
     role: "CMO",
     company: "Casimba",
     image: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/headshots/benmoody.jpeg"
-  },
-  {
-    content: "The intuitive interface makes it easy for our entire team to collaborate. We've seen a 40% increase in productivity since implementing Ibex.",
-    author: "Michael Chen",
-    role: "CEO",
-    company: "TechVision Inc.",
-    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
-  },
-  {
-    content: "As a rapidly growing startup, we needed a solution that could scale with us. Ibex not only met our needs but exceeded our expectations.",
-    author: "Emily Rodriguez",
-    role: "Founder",
-    company: "Novus Ventures",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
   }
+  // {
+  //   content: "The intuitive interface makes it easy for our entire team to collaborate. We've seen a 40% increase in productivity since implementing Ibex.",
+  //   author: "Michael Chen",
+  //   role: "CEO",
+  //   company: "TechVision Inc.",
+  //   image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+  // },
+  // {
+  //   content: "As a rapidly growing startup, we needed a solution that could scale with us. Ibex not only met our needs but exceeded our expectations.",
+  //   author: "Emily Rodriguez",
+  //   role: "Founder",
+  //   company: "Novus Ventures",
+  //   image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
+  // }
 ];
 
 const Testimonials: React.FC = () => {
