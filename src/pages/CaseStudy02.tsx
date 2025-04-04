@@ -132,149 +132,39 @@ const CaseStudy02: React.FC = () => {
                     </h3>
                   </div>
                   
-                  {/* Challenge Tabs */}
-                  <div className="flex flex-wrap justify-center gap-4 mb-8">
-                    {['financial', 'strategic', 'operational'].map((tab) => (
-                      <button
-                        key={tab}
-                        className={`px-5 py-3 rounded-lg font-semibold capitalize relative transition-all ${
-                          activeTab === tab 
-                            ? 'bg-secondary/10 text-foreground after:absolute after:bottom-[-4px] after:left-1/2 after:transform after:-translate-x-1/2 after:w-10 after:h-1 after:bg-secondary after:rounded-full'
-                            : 'bg-secondary/5 text-muted-foreground hover:bg-secondary/10'
-                        }`}
-                        onClick={() => setActiveTab(tab)}
-                      >
-                        {tab}
-                      </button>
-                    ))}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    {/* Financial Challenge Box */}
+                    <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
+                      <div className="text-lg font-semibold text-foreground mb-3 uppercase">Financial</div>
+                      <h4 className="text-lg font-semibold text-foreground mb-3">Increasing bonus and retention costs</h4>
+                      <p className="text-muted-foreground">
+                        Calculating a full P&L for each combination of offers and players allows Ibex to only bonus players
+                        when it is profitable to do so. With over 40 models being used, Ibex calculates a P&L
+                        for each player which greatly reduces bonus costs.
+                      </p>
+                    </div>
+                    
+                    {/* Strategic Challenge Box */}
+                    <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
+                      <div className="text-lg font-semibold text-foreground mb-3 uppercase">Strategic</div>
+                      <h4 className="text-lg font-semibold text-foreground mb-3">Inflexible marketing strategies</h4>
+                      <p className="text-muted-foreground">
+                        With most CRM tools, changing strategy involves a significant amount of work, such as updating
+                        segments and customer journeys. Ibex can shift its retention strategy with the click of a button to
+                        drive the KPIs that are most important for every marketing lifecycle.
+                      </p>
+                    </div>
+                    
+                    {/* Operational Challenge Box */}
+                    <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
+                      <div className="text-lg font-semibold text-foreground mb-3 uppercase">Operational</div>
+                      <h4 className="text-lg font-semibold text-foreground mb-3">Management of growing segments and journeys</h4>
+                      <p className="text-muted-foreground">
+                        Ibex automatically A/B tests new templates and campaigns and continuously optimises its
+                        recommendations.
+                      </p>
+                    </div>
                   </div>
-                  
-                  {/* Financial Challenges */}
-                  {activeTab === 'financial' && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          01
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Increasing bonus and retention costs</h4>
-                        <p className="text-muted-foreground">
-                          Calculating a full P&L for each combination of offers and players allows Ibex to only bonus players
-                          when it is profitable to do so. With over 40 models being used, Ibex calculates a P&L
-                          for each player which greatly reduces bonus costs.
-                        </p>
-                      </div>
-                      
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          02
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Increasing Management needs</h4>
-                        <p className="text-muted-foreground">
-                          Ibex reduces the amount of management needed to orchestrate the increasing number of
-                          customer segments, campaigns and journeys built.
-                        </p>
-                      </div>
-                      
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          03
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Understanding the impact of retention activities</h4>
-                        <p className="text-muted-foreground">
-                          Ibex compares against the best available control groups, namely a human team and current
-                          activities vs its ai-driven recommendations.
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                  
-                  {/* Strategic Challenges */}
-                  {activeTab === 'strategic' && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          01
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Losing sight of strategic goals due to manual legwork</h4>
-                        <p className="text-muted-foreground">
-                          When teams are bogged down with execution and manual legwork, it is easy to lose sight of
-                          strategic and overall commercial goals which need to be achieved. Ibex allows retention
-                          executives to become brand managers and build a strategic mindset.
-                        </p>
-                      </div>
-                      
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          02
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Inflexible marketing strategies</h4>
-                        <p className="text-muted-foreground">
-                          With most CRM tools, changing strategy involves a significant amount of work, such as updating
-                          segments and customer journeys. Ibex can shift its retention strategy with the click of a button to
-                          drive the KPIs that are most important for every marketing lifecycle.
-                        </p>
-                      </div>
-                      
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          03
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Understanding the impact of retention activities</h4>
-                        <p className="text-muted-foreground">
-                          Ibex compares against the best available control groups, namely a human team and current
-                          activities vs its ai-driven recommendations.
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                  
-                  {/* Operational Challenges */}
-                  {activeTab === 'operational' && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          01
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Manual legwork</h4>
-                        <p className="text-muted-foreground">
-                          Ibex automatically calculates and sends the next best action for each player. This includes A/B
-                          testing different communications which frees up time to focus on strategy, creativity and overall
-                          commercial impact.
-                        </p>
-                      </div>
-                      
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          02
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Management of growing segments and journeys (Scalability)</h4>
-                        <p className="text-muted-foreground">
-                          Ibex automatically A/B tests new templates and campaigns and continuously optimises its
-                          recommendations.
-                        </p>
-                      </div>
-                      
-                      <div className="bg-secondary/5 rounded-lg p-5 border-t-4 border-secondary shadow-lg transition-all hover:translate-y-[-4px] hover:shadow-xl">
-                        <div className="flex items-center text-sm font-semibold text-secondary mb-2">
-                          <span className="inline-block w-2 h-2 rounded-full bg-secondary mr-2"></span>
-                          03
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3">Reporting on the impact of campaigns</h4>
-                        <p className="text-muted-foreground">
-                          Reports are automated for all activities compared to flexible control groups and not just campaigns
-                          which reduces the workload for BI teams to consistently analyse performance.
-                        </p>
-                      </div>
-                    </div>
-                  )}
                 </section>
 
                 {/* Solutions Section */}
