@@ -256,62 +256,89 @@ const CaseStudy02: React.FC = () => {
                       player values across the board.
                     </p>
                     
-                    {/* Updated NGR Uplift Chart - Starting bars at zero and using consistent colors */}
+                    {/* Updated NGR Uplift Chart - Simpler bar style */}
                     <div className="bg-card/80 border border-border/30 rounded-lg p-6 mb-6">
-                      <h4 className="text-lg font-semibold text-center mb-8">NGR Uplift</h4>
+                      <h4 className="text-lg font-semibold text-center mb-6">NGR Uplift</h4>
                       
-                      <div className="flex flex-col md:flex-row justify-between gap-6 mb-6">
-                        <div className="flex-1 flex flex-col items-center">
-                          <div className="px-4 py-1 bg-secondary/10 text-secondary font-semibold rounded-full mb-4">+11%</div>
-                          <div className="flex items-end gap-3 h-[200px] mb-4">
-                            <div className="w-12 bg-secondary/30 rounded-t-md relative" style={{ height: '100px' }}>
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">100</div>
+                      <div className="grid grid-cols-3 gap-8">
+                        <div className="flex flex-col items-center">
+                          <div className="text-center mb-3">
+                            <span className="px-3 py-1 bg-secondary/10 text-secondary font-semibold rounded-md">+11%</span>
+                          </div>
+                          <div className="w-full flex justify-center space-x-4">
+                            <div className="flex flex-col items-center">
+                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
+                                <div className="w-full h-[50%] bg-secondary/20 border border-secondary/30 flex items-center justify-center">
+                                  <span className="text-xs font-semibold">100</span>
+                                </div>
+                              </div>
+                              <span className="mt-2 text-xs text-muted-foreground">Traditional</span>
                             </div>
-                            <div className="w-12 bg-secondary rounded-t-md relative" style={{ height: '111px' }}>
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">111</div>
+                            <div className="flex flex-col items-center">
+                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
+                                <div className="w-full h-[55.5%] bg-secondary border border-secondary/50 flex items-center justify-center">
+                                  <span className="text-xs font-semibold text-secondary-foreground">111</span>
+                                </div>
+                              </div>
+                              <span className="mt-2 text-xs text-muted-foreground">Ibex</span>
                             </div>
                           </div>
-                          <div className="font-medium">New</div>
+                          <div className="mt-3 text-sm font-medium">New</div>
                         </div>
                         
-                        <div className="flex-1 flex flex-col items-center bg-secondary/5 px-4 py-6 rounded-lg">
-                          <div className="px-4 py-1 bg-secondary/10 text-secondary font-semibold rounded-full mb-4">+20%</div>
-                          <div className="flex items-end gap-3 h-[200px] mb-4">
-                            <div className="w-12 bg-secondary/30 rounded-t-md relative" style={{ height: '100px' }}>
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">100</div>
+                        <div className="flex flex-col items-center">
+                          <div className="text-center mb-3">
+                            <span className="px-3 py-1 bg-secondary/10 text-secondary font-semibold rounded-md">+20%</span>
+                          </div>
+                          <div className="w-full flex justify-center space-x-4">
+                            <div className="flex flex-col items-center">
+                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
+                                <div className="w-full h-[50%] bg-secondary/20 border border-secondary/30 flex items-center justify-center">
+                                  <span className="text-xs font-semibold">100</span>
+                                </div>
+                              </div>
+                              <span className="mt-2 text-xs text-muted-foreground">Traditional</span>
                             </div>
-                            <div className="w-12 bg-secondary rounded-t-md relative" style={{ height: '120px' }}>
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">120</div>
+                            <div className="flex flex-col items-center">
+                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
+                                <div className="w-full h-[60%] bg-secondary border border-secondary/50 flex items-center justify-center">
+                                  <span className="text-xs font-semibold text-secondary-foreground">120</span>
+                                </div>
+                              </div>
+                              <span className="mt-2 text-xs text-muted-foreground">Ibex</span>
                             </div>
                           </div>
-                          <div className="font-medium">Retained</div>
+                          <div className="mt-3 text-sm font-medium">Retained</div>
                         </div>
                         
-                        <div className="flex-1 flex flex-col items-center">
-                          <div className="px-4 py-1 bg-secondary/10 text-secondary font-semibold rounded-full mb-4">+7%</div>
-                          <div className="flex items-end gap-3 h-[200px] mb-4">
-                            <div className="w-12 bg-secondary/30 rounded-t-md relative" style={{ height: '100px' }}>
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">100</div>
+                        <div className="flex flex-col items-center">
+                          <div className="text-center mb-3">
+                            <span className="px-3 py-1 bg-secondary/10 text-secondary font-semibold rounded-md">+7%</span>
+                          </div>
+                          <div className="w-full flex justify-center space-x-4">
+                            <div className="flex flex-col items-center">
+                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
+                                <div className="w-full h-[50%] bg-secondary/20 border border-secondary/30 flex items-center justify-center">
+                                  <span className="text-xs font-semibold">100</span>
+                                </div>
+                              </div>
+                              <span className="mt-2 text-xs text-muted-foreground">Traditional</span>
                             </div>
-                            <div className="w-12 bg-secondary rounded-t-md relative" style={{ height: '107px' }}>
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">107</div>
+                            <div className="flex flex-col items-center">
+                              <div className="h-40 w-16 bg-secondary/20 relative flex items-end">
+                                <div className="w-full h-[53.5%] bg-secondary border border-secondary/50 flex items-center justify-center">
+                                  <span className="text-xs font-semibold text-secondary-foreground">107</span>
+                                </div>
+                              </div>
+                              <span className="mt-2 text-xs text-muted-foreground">Ibex</span>
                             </div>
                           </div>
-                          <div className="font-medium">Reactivated</div>
+                          <div className="mt-3 text-sm font-medium">Reactivated</div>
                         </div>
                       </div>
                       
-                      <p className="text-sm text-center text-muted-foreground mb-6">Traditional CRM performance provided as a benchmark = 100</p>
-                      
-                      <div className="flex justify-center gap-6 pt-4 border-t border-border/30">
-                        <div className="flex items-center gap-2">
-                          <div className="w-4 h-4 bg-secondary/30 rounded"></div>
-                          <span className="text-sm">Traditional CRM</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <div className="w-4 h-4 bg-secondary rounded"></div>
-                          <span className="text-sm">Ibex CRM</span>
-                        </div>
+                      <div className="text-xs text-center text-muted-foreground mt-6">
+                        Traditional CRM performance provided as a benchmark = 100
                       </div>
                     </div>
                   </div>
