@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -43,14 +42,6 @@ const Index = () => {
 
   return (
     <div className="antialiased min-h-screen bg-background">
-      {/* Background elements */}
-      <div className="light-rays"></div>
-      <div className="sunburst-effect"></div>
-      <div className="top-light-ray"></div>
-      <div className="app-background"></div>
-      <div className="glow-overlay"></div>
-      <div className="backup-pattern"></div>
-      
       <Header />
       <main className="pt-16 md:pt-20 relative z-10">
         <Hero />
