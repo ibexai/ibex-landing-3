@@ -12,7 +12,7 @@ const clients = [
   {
     name: "Easybet",
     logoUrl: "https://ibex-landing.s3.eu-west-2.amazonaws.com/static/logos/easybet.png?w=200&h=100&fit=crop&auto=format",
-    website: "https://easybet.co.z"
+    website: "https://easybet.co.za"
   },
   {
     name: "Betway",
