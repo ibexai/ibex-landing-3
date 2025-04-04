@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -40,15 +39,11 @@ const Index = () => {
       document.removeEventListener('click', handleAnchorClick);
     };
   }, []);
-  
+
   return (
     <div className="antialiased min-h-screen bg-background">
-      {/* Background elements */}
-      <div className="app-background"></div>
-      <div className="glow-overlay"></div>
-      
       <Header />
-      <main className="pt-16 md:pt-20">
+      <main className="pt-16 md:pt-20 relative z-10">
         <Hero />
         <Features />
         <Testimonials />

@@ -124,7 +124,7 @@ const Features: React.FC = () => {
           Smarter Marketing Powered by AI
           </h2>
           <p className={`text-lg text-muted-foreground ${isInView ? 'animate-fade-up delay-200' : 'opacity-0'}`}>
-          At Ibex, we believe in the power of technology to make marketing more effective, efficient, and personalized. Our AI-driven platform takes the guesswork out of retention marketing, helping businesses make smarter decisions, reach the right players, and drive higher profits with less effort.
+          At Ibex, we believe in the power of technology to make marketing more effective, efficient, and personalised. Our AI-driven platform takes the guesswork out of retention marketing, helping businesses make smarter decisions, reach the right players, and drive higher profits with less effort.
           </p>
         </div>
         

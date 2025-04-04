@@ -8,11 +8,14 @@ const CaseStudy01: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Background elements */}
+      <div className="light-rays"></div>
+      <div className="sunburst-effect"></div>
       <div className="app-background"></div>
       <div className="glow-overlay"></div>
+      <div className="backup-pattern"></div>
       
       <Header />
-      <main className="pt-24">
+      <main className="pt-24 relative z-10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="my-6">
             <Link 
