@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -255,14 +256,14 @@ const CaseStudy02: React.FC = () => {
                       player values across the board.
                     </p>
                     
-                    {/* Updated NGR Uplift Chart - Standard bars with improved percentage indicators */}
+                    {/* Updated NGR Uplift Chart with highlighted Ibex bars */}
                     <div className="bg-card/80 border border-border/30 rounded-lg p-6 mb-6">
                       <h4 className="text-lg font-semibold text-center mb-6">NGR Uplift</h4>
                       
                       <div className="grid grid-cols-3 gap-8">
                         {/* New players column */}
                         <div className="flex flex-col items-center">
-                          <div className="text-xl font-bold text-primary mb-3">
+                          <div className="text-xl md:text-2xl font-bold text-primary mb-3">
                             +11%
                           </div>
                           <div className="flex items-end h-64 space-x-6">
@@ -275,7 +276,7 @@ const CaseStudy02: React.FC = () => {
                               <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="w-16 bg-primary/30 rounded-t-md" style={{ height: '200px' }}>
+                              <div className="w-16 bg-primary/30 rounded-t-md shadow-lg shadow-primary/20 ring-2 ring-primary/40" style={{ height: '200px' }}>
                                 <div className="h-full flex items-center justify-center">
                                   <span className="font-semibold">111</span>
                                 </div>
@@ -288,7 +289,7 @@ const CaseStudy02: React.FC = () => {
                         
                         {/* Retained players column */}
                         <div className="flex flex-col items-center">
-                          <div className="text-xl font-bold text-primary mb-3">
+                          <div className="text-xl md:text-2xl font-bold text-primary mb-3">
                             +20%
                           </div>
                           <div className="flex items-end h-64 space-x-6">
@@ -301,7 +302,7 @@ const CaseStudy02: React.FC = () => {
                               <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="w-16 bg-primary/30 rounded-t-md" style={{ height: '216px' }}>
+                              <div className="w-16 bg-primary/30 rounded-t-md shadow-lg shadow-primary/20 ring-2 ring-primary/40" style={{ height: '216px' }}>
                                 <div className="h-full flex items-center justify-center">
                                   <span className="font-semibold">120</span>
                                 </div>
@@ -314,7 +315,7 @@ const CaseStudy02: React.FC = () => {
                         
                         {/* Reactivated players column */}
                         <div className="flex flex-col items-center">
-                          <div className="text-xl font-bold text-primary mb-3">
+                          <div className="text-xl md:text-2xl font-bold text-primary mb-3">
                             +7%
                           </div>
                           <div className="flex items-end h-64 space-x-6">
@@ -327,7 +328,7 @@ const CaseStudy02: React.FC = () => {
                               <span className="mt-2 text-sm text-muted-foreground">Traditional</span>
                             </div>
                             <div className="flex flex-col items-center">
-                              <div className="w-16 bg-primary/30 rounded-t-md" style={{ height: '193px' }}>
+                              <div className="w-16 bg-primary/30 rounded-t-md shadow-lg shadow-primary/20 ring-2 ring-primary/40" style={{ height: '193px' }}>
                                 <div className="h-full flex items-center justify-center">
                                   <span className="font-semibold">107</span>
                                 </div>
