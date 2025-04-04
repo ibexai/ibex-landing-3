@@ -256,7 +256,7 @@ const CaseStudy02: React.FC = () => {
                       player values across the board.
                     </p>
                     
-                    {/* NGR Uplift Chart */}
+                    {/* Updated NGR Uplift Chart - Starting bars at zero and using consistent colors */}
                     <div className="bg-card/80 border border-border/30 rounded-lg p-6 mb-6">
                       <h4 className="text-lg font-semibold text-center mb-8">NGR Uplift</h4>
                       
@@ -264,11 +264,11 @@ const CaseStudy02: React.FC = () => {
                         <div className="flex-1 flex flex-col items-center">
                           <div className="px-4 py-1 bg-secondary/10 text-secondary font-semibold rounded-full mb-4">+11%</div>
                           <div className="flex items-end gap-3 h-[200px] mb-4">
-                            <div className="w-12 h-[100px] bg-secondary/30 rounded-t-md relative">
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-white py-1 rounded">100</div>
+                            <div className="w-12 bg-secondary/30 rounded-t-md relative" style={{ height: '100px' }}>
+                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">100</div>
                             </div>
-                            <div className="w-12 h-[111px] bg-secondary rounded-t-md relative">
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-white py-1 rounded">111</div>
+                            <div className="w-12 bg-secondary rounded-t-md relative" style={{ height: '111px' }}>
+                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">111</div>
                             </div>
                           </div>
                           <div className="font-medium">New</div>
@@ -277,11 +277,11 @@ const CaseStudy02: React.FC = () => {
                         <div className="flex-1 flex flex-col items-center bg-secondary/5 px-4 py-6 rounded-lg">
                           <div className="px-4 py-1 bg-secondary/10 text-secondary font-semibold rounded-full mb-4">+20%</div>
                           <div className="flex items-end gap-3 h-[200px] mb-4">
-                            <div className="w-12 h-[100px] bg-secondary/30 rounded-t-md relative">
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-white py-1 rounded">100</div>
+                            <div className="w-12 bg-secondary/30 rounded-t-md relative" style={{ height: '100px' }}>
+                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">100</div>
                             </div>
-                            <div className="w-12 h-[120px] bg-secondary rounded-t-md relative">
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-white py-1 rounded">120</div>
+                            <div className="w-12 bg-secondary rounded-t-md relative" style={{ height: '120px' }}>
+                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">120</div>
                             </div>
                           </div>
                           <div className="font-medium">Retained</div>
@@ -290,11 +290,11 @@ const CaseStudy02: React.FC = () => {
                         <div className="flex-1 flex flex-col items-center">
                           <div className="px-4 py-1 bg-secondary/10 text-secondary font-semibold rounded-full mb-4">+7%</div>
                           <div className="flex items-end gap-3 h-[200px] mb-4">
-                            <div className="w-12 h-[100px] bg-secondary/30 rounded-t-md relative">
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-white py-1 rounded">100</div>
+                            <div className="w-12 bg-secondary/30 rounded-t-md relative" style={{ height: '100px' }}>
+                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">100</div>
                             </div>
-                            <div className="w-12 h-[107px] bg-secondary rounded-t-md relative">
-                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-white py-1 rounded">107</div>
+                            <div className="w-12 bg-secondary rounded-t-md relative" style={{ height: '107px' }}>
+                              <div className="absolute -top-6 left-0 right-0 text-center text-xs font-semibold bg-secondary text-secondary-foreground py-1 rounded">107</div>
                             </div>
                           </div>
                           <div className="font-medium">Reactivated</div>
