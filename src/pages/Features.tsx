@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -10,6 +11,7 @@ const Features: React.FC = () => {
       {/* Background elements */}
       <div className="light-rays"></div>
       <div className="sunburst-effect"></div>
+      <div className="top-light-ray"></div>
       <div className="app-background"></div>
       <div className="glow-overlay"></div>
       <div className="backup-pattern"></div>
