@@ -44,7 +44,7 @@ const HowItWorks: React.FC = () => {
     },
     {
       title: "Seamless Automation & Scalability",
-      description: "Reduce manual workload while scaling retention efforts—Ibex automates campaign selection for high volumes of players. Seamless integrations enable automated communication delivery and bonus crediting, minimizing strain on CRM teams.",
+      description: "Reduce manual workload while scaling retention efforts. Ibex automates campaign selection for high volumes of players. Seamless integrations enable automated communication delivery and bonus crediting, minimizing strain on CRM teams.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
@@ -149,7 +149,7 @@ const HowItWorks: React.FC = () => {
               {[
                 {
                   question: "What is Ibex?",
-                  answer: "Ibex is an AI-powered CRM automation platform that helps businesses personalize and optimize player engagement without manual segmentation or campaign scheduling."
+                  answer: "Ibex is an AI-powered CRM automation platform that helps businesses personalise and optimize player engagement without manual segmentation or campaign scheduling."
                 },
                 {
                   question: "How does Ibex improve marketing performance?",

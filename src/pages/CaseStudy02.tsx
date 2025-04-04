@@ -171,7 +171,7 @@ const CaseStudy02: React.FC = () => {
                   </h3>
                   
                   <p className="mb-6 text-muted-foreground">
-                    We set ourselves a challenge towards the latter months of 2022;
+                    We set ourselves a challenge:
                     can we address all of these problems and prove the benefits of
                     using an AI-driven system, comparing against the best possible
                     control group – a human-led marketing team using traditional
