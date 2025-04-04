@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
@@ -28,16 +27,24 @@ const CaseStudy01: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <div className="case-study-card rounded-lg overflow-hidden bg-card/95 border border-border shadow-lg mb-12">
               <div className="p-8 md:p-10">
-                <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-center text-foreground">
-                  Real-Time Automation: Scaling Without Limits
-                </h2>
-                <div className="mb-6 text-center text-lg">
-                  Automating player bonusing and communications to support <span className="font-semibold text-primary">30% month-over-month average player growth</span>—without added operational strain.
+                {/* Title Section */}
+                <div className="text-center mb-12 pb-6 border-b border-border/30">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-center text-foreground">
+                    Real-Time Automation: Scaling Without Limits
+                  </h2>
+                  <div className="flex justify-center gap-2 my-4">
+                    <span className="block h-1 w-10 bg-primary rounded-full"></span>
+                    <span className="block h-1 w-20 bg-secondary rounded-full"></span>
+                    <span className="block h-1 w-10 bg-primary rounded-full"></span>
+                  </div>
+                  <p className="text-xl font-medium text-muted-foreground mt-4">
+                    Automating player bonusing and communications to support <span className="font-semibold text-primary">30% month-over-month average player growth</span>—without added operational strain.
+                  </p>
                 </div>
 
                 {/* The Challenge Section */}
                 <section className="mb-10">
-                  <h3 className="text-xl font-bold mb-4 flex items-center text-foreground">
+                  <h3 className="text-xl font-bold mb-6 flex items-center text-foreground border-b border-border/30 pb-3">
                     <span className="text-2xl mr-2">📊</span>
                     The Challenge
                   </h3>
@@ -48,7 +55,7 @@ const CaseStudy01: React.FC = () => {
 
                 {/* Our Solution Section */}
                 <section className="mb-10">
-                  <h3 className="text-xl font-bold mb-4 flex items-center text-foreground">
+                  <h3 className="text-xl font-bold mb-6 flex items-center text-foreground border-b border-border/30 pb-3">
                     <span className="text-2xl mr-2">🚀</span>
                     Our Solution
                   </h3>
@@ -59,7 +66,7 @@ const CaseStudy01: React.FC = () => {
 
                 {/* What We Did Section */}
                 <section className="mb-10">
-                  <h3 className="text-xl font-bold mb-4 flex items-center text-foreground">
+                  <h3 className="text-xl font-bold mb-6 flex items-center text-foreground border-b border-border/30 pb-3">
                     <span className="text-2xl mr-2">🛠️</span>
                     What We Did
                   </h3>
@@ -96,7 +103,7 @@ const CaseStudy01: React.FC = () => {
 
                 {/* The Results Section */}
                 <section className="mb-10">
-                  <h3 className="text-xl font-bold mb-4 flex items-center text-foreground">
+                  <h3 className="text-xl font-bold mb-6 flex items-center text-foreground border-b border-border/30 pb-3">
                     <span className="text-2xl mr-2">📈</span>
                     The Results: Exponential Growth Without Bottlenecks
                   </h3>
@@ -106,7 +113,7 @@ const CaseStudy01: React.FC = () => {
                   </p>
                   
                   {/* Chart Card 1 */}
-                  <div className="bg-card/95 border border-border rounded-lg overflow-hidden p-6 mb-8">
+                  <div className="bg-card/80 border border-border/30 rounded-lg overflow-hidden p-6 mb-8">
                     <h3 className="font-bold text-foreground mb-2">Cumulative Registrations</h3>
                     <div className="text-sm text-muted-foreground mb-4">Figures normalized from a base of 1,000 in April 2023</div>
                     <div className="h-[300px] w-full">
@@ -187,7 +194,7 @@ const CaseStudy01: React.FC = () => {
                   </p>
                   
                   {/* Stats Card */}
-                  <div className="bg-secondary p-4 rounded-lg mb-6">
+                  <div className="bg-secondary/5 p-4 rounded-lg border border-secondary/20 mb-6">
                     <div className="flex flex-wrap gap-4">
                       <div className="flex-1 min-w-[160px]">
                         <div className="text-sm text-muted-foreground mb-1">Before Automation Avg:</div>
@@ -205,7 +212,7 @@ const CaseStudy01: React.FC = () => {
                   </div>
 
                   {/* Chart Card 2 */}
-                  <div className="bg-card/95 border border-border rounded-lg overflow-hidden p-6 mb-8">
+                  <div className="bg-card/80 border border-border/30 rounded-lg overflow-hidden p-6 mb-8">
                     <h3 className="font-bold text-foreground mb-2">FTD Conversion Rate</h3>
                     <div className="text-sm text-muted-foreground mb-4">April 2023 - March 2025</div>
                     <div className="h-[300px] w-full">
@@ -304,7 +311,7 @@ const CaseStudy01: React.FC = () => {
 
                 {/* The Impact Section */}
                 <section className="mb-10">
-                  <h3 className="text-xl font-bold mb-4 flex items-center text-foreground">
+                  <h3 className="text-xl font-bold mb-6 flex items-center text-foreground border-b border-border/30 pb-3">
                     <span className="text-2xl mr-2">🎯</span>
                     The Impact
                   </h3>
@@ -331,7 +338,7 @@ const CaseStudy01: React.FC = () => {
                 </section>
 
                 {/* Conclusion */}
-                <div className="bg-secondary/50 p-6 rounded-lg border-l-4 border-primary italic text-muted-foreground">
+                <div className="bg-secondary/5 p-6 rounded-lg border-l-4 border-secondary italic text-muted-foreground text-center">
                   This success highlights just one aspect of Ibex's product suite. With AI-driven recommendations and CRM optimization features, the client is now expanding their retention efforts to include payday initiatives and other AI-driven strategies.
                 </div>
               </div>

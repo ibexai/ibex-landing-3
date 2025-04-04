@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
 const CaseStudy02: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('financial');
-
   return (
     <div className="min-h-screen bg-background">
       {/* Background elements */}
@@ -33,7 +30,7 @@ const CaseStudy02: React.FC = () => {
                 {/* Title Section */}
                 <div className="text-center mb-12 pb-6 border-b border-border/30">
                   <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-center text-foreground">
-                    RISE OF THE MACHINES
+                    Randomised trial: pitting the Ibex AI against segment-based CRM
                   </h2>
                   <div className="flex justify-center gap-2 my-4">
                     <span className="block h-1 w-10 bg-primary rounded-full"></span>
