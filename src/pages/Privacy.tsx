@@ -86,6 +86,7 @@ const Privacy: React.FC = () => {
                   36-38 Piccadilly<br />
                   London, W1J 0DP
                 </p>
+                <p className="mt-2">Our data protection officer is Phil Deutsch who can be reached at phil (at) ibex.ai.</p>
               </section>
               
               <div className="mt-12 flex flex-col md:flex-row gap-4">
