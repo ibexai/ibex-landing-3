@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,6 +10,17 @@ const Footer: React.FC = () => {
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Ibex. All rights reserved.
           </p>
+          
+          <div className="flex items-center gap-6 mb-4 md:mb-0">
+            <a 
+              href="https://capricorncapital.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Part of the Capricorn Capital Group
+            </a>
+          </div>
           
           <div className="flex flex-wrap justify-center gap-6">
             {[
