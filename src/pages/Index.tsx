@@ -43,7 +43,7 @@ const Index = () => {
 
   return (
     <div className="antialiased min-h-screen bg-transparent">
-      {/* Enhanced background effects with proper z-index */}
+      {/* Enhanced background effects with negative z-index to be behind content */}
       <div className="keak-gradient"></div>
       <div className="light-rays"></div>
       <div className="sunburst-effect"></div>
@@ -60,7 +60,7 @@ const Index = () => {
         <Contact />
         
         {/* ISO Certification */}
-        <div className="container mx-auto px-4 md:px-6 py-8 flex flex-col items-center">
+        <div className="container mx-auto px-4 md:px-6 py-8 flex flex-col items-center relative z-10">
           <a 
             href="https://clients.britishassessment.com/verify.asp" 
             target="_blank" 

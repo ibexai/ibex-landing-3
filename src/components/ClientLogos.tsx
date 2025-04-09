@@ -55,16 +55,9 @@ const ClientLogos: React.FC = () => {
       ref={sectionRef}
       className="py-16 md:py-20 bg-background border-t border-border/10 relative"
     >
-      {/* Background elements for this section */}
-      <div className="absolute inset-0 z-0">
-        <div className="light-rays"></div>
-        <div className="sunburst-effect"></div>
-        <div className="app-background"></div>
-        <div className="glow-overlay"></div>
-        <div className="keak-gradient"></div>
-      </div>
+      {/* Removed background elements since they should be layered at the page level */}
       
-      <div className="container mx-auto px-4 md:px-6 relative z-1">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className={`text-2xl md:text-3xl font-display font-bold mb-4 ${getAnimationClass(isInView, 'fade-up')}`}>

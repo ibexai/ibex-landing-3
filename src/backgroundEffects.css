@@ -1,7 +1,7 @@
 
 /* Alternative background effects that should work in all browsers */
 
-/* Strong sunburst with higher contrast */
+/* Strong sunburst with higher contrast - updated to light grey */
 .alt-sunburst {
   position: fixed;
   top: 0;
@@ -10,104 +10,104 @@
   height: 100%;
   background-image: conic-gradient(
     from 0deg,
-    rgba(70, 70, 70, 0.3) 0deg,
+    rgba(200, 200, 200, 0.3) 0deg,
     transparent 4deg,
-    rgba(70, 70, 70, 0.3) 8deg,
+    rgba(200, 200, 200, 0.3) 8deg,
     transparent 12deg,
-    rgba(70, 70, 70, 0.3) 16deg,
+    rgba(200, 200, 200, 0.3) 16deg,
     transparent 20deg,
-    rgba(70, 70, 70, 0.3) 24deg,
+    rgba(200, 200, 200, 0.3) 24deg,
     transparent 28deg,
-    rgba(70, 70, 70, 0.3) 32deg,
+    rgba(200, 200, 200, 0.3) 32deg,
     transparent 36deg,
-    rgba(70, 70, 70, 0.3) 40deg,
+    rgba(200, 200, 200, 0.3) 40deg,
     transparent 44deg,
-    rgba(70, 70, 70, 0.3) 48deg,
+    rgba(200, 200, 200, 0.3) 48deg,
     transparent 52deg,
-    rgba(70, 70, 70, 0.3) 56deg,
+    rgba(200, 200, 200, 0.3) 56deg,
     transparent 60deg,
-    rgba(70, 70, 70, 0.3) 64deg,
+    rgba(200, 200, 200, 0.3) 64deg,
     transparent 68deg,
-    rgba(70, 70, 70, 0.3) 72deg,
+    rgba(200, 200, 200, 0.3) 72deg,
     transparent 76deg,
-    rgba(70, 70, 70, 0.3) 80deg,
+    rgba(200, 200, 200, 0.3) 80deg,
     transparent 84deg,
-    rgba(70, 70, 70, 0.3) 88deg,
+    rgba(200, 200, 200, 0.3) 88deg,
     transparent 92deg,
-    rgba(70, 70, 70, 0.3) 96deg,
+    rgba(200, 200, 200, 0.3) 96deg,
     transparent 100deg,
-    rgba(70, 70, 70, 0.3) 104deg,
+    rgba(200, 200, 200, 0.3) 104deg,
     transparent 108deg,
-    rgba(70, 70, 70, 0.3) 112deg,
+    rgba(200, 200, 200, 0.3) 112deg,
     transparent 116deg,
-    rgba(70, 70, 70, 0.3) 120deg,
+    rgba(200, 200, 200, 0.3) 120deg,
     transparent 124deg,
-    rgba(70, 70, 70, 0.3) 128deg,
+    rgba(200, 200, 200, 0.3) 128deg,
     transparent 132deg,
-    rgba(70, 70, 70, 0.3) 136deg,
+    rgba(200, 200, 200, 0.3) 136deg,
     transparent 140deg,
-    rgba(70, 70, 70, 0.3) 144deg,
+    rgba(200, 200, 200, 0.3) 144deg,
     transparent 148deg,
-    rgba(70, 70, 70, 0.3) 152deg,
+    rgba(200, 200, 200, 0.3) 152deg,
     transparent 156deg,
-    rgba(70, 70, 70, 0.3) 160deg,
+    rgba(200, 200, 200, 0.3) 160deg,
     transparent 164deg,
-    rgba(70, 70, 70, 0.3) 168deg,
+    rgba(200, 200, 200, 0.3) 168deg,
     transparent 172deg,
-    rgba(70, 70, 70, 0.3) 176deg,
+    rgba(200, 200, 200, 0.3) 176deg,
     transparent 180deg,
-    rgba(70, 70, 70, 0.3) 184deg,
+    rgba(200, 200, 200, 0.3) 184deg,
     transparent 188deg,
-    rgba(70, 70, 70, 0.3) 192deg,
+    rgba(200, 200, 200, 0.3) 192deg,
     transparent 196deg,
-    rgba(70, 70, 70, 0.3) 200deg,
+    rgba(200, 200, 200, 0.3) 200deg,
     transparent 204deg,
-    rgba(70, 70, 70, 0.3) 208deg,
+    rgba(200, 200, 200, 0.3) 208deg,
     transparent 212deg,
-    rgba(70, 70, 70, 0.3) 216deg,
+    rgba(200, 200, 200, 0.3) 216deg,
     transparent 220deg,
-    rgba(70, 70, 70, 0.3) 224deg,
+    rgba(200, 200, 200, 0.3) 224deg,
     transparent 228deg,
-    rgba(70, 70, 70, 0.3) 232deg,
+    rgba(200, 200, 200, 0.3) 232deg,
     transparent 236deg,
-    rgba(70, 70, 70, 0.3) 240deg,
+    rgba(200, 200, 200, 0.3) 240deg,
     transparent 244deg,
-    rgba(70, 70, 70, 0.3) 248deg,
+    rgba(200, 200, 200, 0.3) 248deg,
     transparent 252deg,
-    rgba(70, 70, 70, 0.3) 256deg,
+    rgba(200, 200, 200, 0.3) 256deg,
     transparent 260deg,
-    rgba(70, 70, 70, 0.3) 264deg,
+    rgba(200, 200, 200, 0.3) 264deg,
     transparent 268deg,
-    rgba(70, 70, 70, 0.3) 272deg,
+    rgba(200, 200, 200, 0.3) 272deg,
     transparent 276deg,
-    rgba(70, 70, 70, 0.3) 280deg,
+    rgba(200, 200, 200, 0.3) 280deg,
     transparent 284deg,
-    rgba(70, 70, 70, 0.3) 288deg,
+    rgba(200, 200, 200, 0.3) 288deg,
     transparent 292deg,
-    rgba(70, 70, 70, 0.3) 296deg,
+    rgba(200, 200, 200, 0.3) 296deg,
     transparent 300deg,
-    rgba(70, 70, 70, 0.3) 304deg,
+    rgba(200, 200, 200, 0.3) 304deg,
     transparent 308deg,
-    rgba(70, 70, 70, 0.3) 312deg,
+    rgba(200, 200, 200, 0.3) 312deg,
     transparent 316deg,
-    rgba(70, 70, 70, 0.3) 320deg,
+    rgba(200, 200, 200, 0.3) 320deg,
     transparent 324deg,
-    rgba(70, 70, 70, 0.3) 328deg,
+    rgba(200, 200, 200, 0.3) 328deg,
     transparent 332deg,
-    rgba(70, 70, 70, 0.3) 336deg,
+    rgba(200, 200, 200, 0.3) 336deg,
     transparent 340deg,
-    rgba(70, 70, 70, 0.3) 344deg,
+    rgba(200, 200, 200, 0.3) 344deg,
     transparent 348deg,
-    rgba(70, 70, 70, 0.3) 352deg,
+    rgba(200, 200, 200, 0.3) 352deg,
     transparent 356deg,
-    rgba(70, 70, 70, 0.3) 360deg
+    rgba(200, 200, 200, 0.3) 360deg
   );
   opacity: 0.8;
-  z-index: -5;
+  z-index: -15; /* Reduced z-index to be below content */
   animation: rotate 180s linear infinite;
 }
 
-/* Alternative light rays using a different approach */
+/* Alternative light rays using a different approach - updated to light grey */
 .alt-rays {
   position: fixed;
   top: 0;
@@ -115,17 +115,17 @@
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(45deg, rgba(70, 70, 70, 0.3) 25%, transparent 25%),
-    linear-gradient(135deg, rgba(70, 70, 70, 0.3) 25%, transparent 25%),
-    linear-gradient(225deg, rgba(70, 70, 70, 0.3) 25%, transparent 25%),
-    linear-gradient(315deg, rgba(70, 70, 70, 0.3) 25%, transparent 25%);
+    linear-gradient(45deg, rgba(200, 200, 200, 0.3) 25%, transparent 25%),
+    linear-gradient(135deg, rgba(200, 200, 200, 0.3) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(200, 200, 200, 0.3) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(200, 200, 200, 0.3) 25%, transparent 25%);
   background-size: 50% 50%;
   opacity: 0.8;
-  z-index: -6;
+  z-index: -16; /* Reduced z-index to be below content */
   animation: rays-rotate 240s linear infinite;
 }
 
-/* Simple cross rays pattern */
+/* Simple cross rays pattern - updated to light grey */
 .simple-rays {
   position: fixed;
   top: 0;
@@ -134,11 +134,11 @@
   height: 100%;
   background-color: #f6f8fb;
   background-image: 
-    linear-gradient(90deg, rgba(70, 70, 70, 0.4) 5%, transparent 5%, transparent 95%, rgba(70, 70, 70, 0.4) 95%),
-    linear-gradient(0deg, rgba(70, 70, 70, 0.4) 5%, transparent 5%, transparent 95%, rgba(70, 70, 70, 0.4) 95%);
+    linear-gradient(90deg, rgba(200, 200, 200, 0.4) 5%, transparent 5%, transparent 95%, rgba(200, 200, 200, 0.4) 95%),
+    linear-gradient(0deg, rgba(200, 200, 200, 0.4) 5%, transparent 5%, transparent 95%, rgba(200, 200, 200, 0.4) 95%);
   background-size: 50px 50px;
   opacity: 0.7;
-  z-index: -6;
+  z-index: -17; /* Reduced z-index to be below content */
 }
 
 /* Animation keyframes */

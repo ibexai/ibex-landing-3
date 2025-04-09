@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from 'react';
 import { useInView, getAnimationClass } from '@/lib/animations';
 
@@ -46,16 +45,9 @@ const Testimonials: React.FC = () => {
       id="testimonials"
       className="section-spacing bg-background relative"
     >
-      {/* Background elements for this section */}
-      <div className="absolute inset-0 z-0">
-        <div className="light-rays"></div>
-        <div className="sunburst-effect"></div>
-        <div className="app-background"></div>
-        <div className="glow-overlay"></div>
-        <div className="keak-gradient"></div>
-      </div>
+      {/* Removed background elements since they should be layered at the page level */}
       
-      <div className="container mx-auto px-4 md:px-6 relative z-1">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className={`inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary ${getAnimationClass(isInView, 'fade-in')}`}>
