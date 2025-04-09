@@ -46,8 +46,11 @@ const Hero: React.FC = () => {
   
   return <>
       <section ref={heroRef} className="relative min-h-[80vh] flex flex-col items-center justify-center section-spacing pt-20 pb-0 overflow-hidden" id="hero">
-        {/* Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 to-background/90 z-0"></div>
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95 z-0"></div>
+        
+        {/* Light Ray Effect */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent z-0 light-ray-animation"></div>
         
         {/* Subtle Animated Pattern Overlay */}
         <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0xLjEuOS0yIDItMmgxMmExIDEgMCAwIDEgMSAxIDEgMSAwIDAgMSAxIDFoLTFhMSAxIDAgMCAxLTEtMUgzN2ExIDEgMCAwIDEtMS0xeiIvPjwvZz48L2c+PC9zdmc+')] z-0"></div>

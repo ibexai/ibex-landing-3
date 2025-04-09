@@ -1,3 +1,4 @@
+
 #root {
   width: 100%;
   margin: 0 auto;
@@ -42,14 +43,16 @@
   color: #888;
 }
 
-/* Background animated gradient */
+/* Enhanced Background Elements */
+
+/* Main background glow */
 .glow-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 50%, rgba(155, 135, 245, 0.3) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 0%, rgba(155, 135, 245, 0.4) 0%, transparent 70%);
   animation: pulse 8s ease-in-out infinite alternate;
   pointer-events: none;
   z-index: -4;
@@ -64,35 +67,54 @@
   }
 }
 
-/* ULTRA SIMPLE sunburst - should work in all browsers */
+/* Light ray effect similar to keak.com */
 .sunburst-effect {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, transparent 45%, rgba(155, 135, 245, 0.4) 50%, transparent 55%),
-              linear-gradient(90deg, transparent 45%, rgba(155, 135, 245, 0.4) 50%, transparent 55%);
-  opacity: 0.7;
+  background: 
+    linear-gradient(180deg, rgba(155, 135, 245, 0.35) 0%, transparent 30%),
+    linear-gradient(0deg, transparent 45%, rgba(155, 135, 245, 0.25) 50%, transparent 55%),
+    linear-gradient(90deg, transparent 45%, rgba(155, 135, 245, 0.25) 50%, transparent 55%);
+  opacity: 0.8;
   z-index: -5;
   animation: rotate 180s linear infinite;
 }
 
-/* Light rays - ultra simple version */
+/* Light ray animation */
+.light-ray-animation {
+  animation: ray-pulse 5s ease-in-out infinite alternate;
+}
+
+@keyframes ray-pulse {
+  0% {
+    opacity: 0.6;
+    background-position: center top;
+  }
+  100% {
+    opacity: 1;
+    background-position: center 20%;
+  }
+}
+
+/* Enhanced light rays with diagonal gradients */
 .light-rays {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, transparent 45%, rgba(155, 135, 245, 0.4) 50%, transparent 55%),
-              linear-gradient(135deg, transparent 45%, rgba(155, 135, 245, 0.4) 50%, transparent 55%);
-  opacity: 0.7;
+  background: 
+    linear-gradient(45deg, transparent 45%, rgba(155, 135, 245, 0.3) 50%, transparent 55%),
+    linear-gradient(135deg, transparent 45%, rgba(155, 135, 245, 0.3) 50%, transparent 55%);
+  opacity: 0.8;
   z-index: -6;
   animation: rays-rotate 240s linear infinite;
 }
 
-/* A third pattern option in case the others don't display correctly */
+/* Keak.com style pattern */
 .backup-pattern {
   position: fixed;
   left: 0;
@@ -105,7 +127,7 @@
     radial-gradient(rgba(155, 135, 245, 0.4) 1px, transparent 1px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
-  opacity: 0.7;
+  opacity: 0.5;
   z-index: -7;
 }
 
@@ -125,4 +147,28 @@
   100% {
     transform: rotate(-360deg);
   }
+}
+
+/* Subtle moving gradient like keak.com */
+.keak-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(215deg, 
+    rgba(155, 135, 245, 0.12) 0%, 
+    rgba(155, 135, 245, 0.06) 25%, 
+    rgba(155, 135, 245, 0.02) 50%, 
+    rgba(155, 135, 245, 0.06) 75%, 
+    rgba(155, 135, 245, 0.12) 100%);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  z-index: -8;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
