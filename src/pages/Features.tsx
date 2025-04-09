@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -6,8 +7,8 @@ import { Button } from '@/components/ui/button';
 
 const Features: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Background elements */}
+    <div className="min-h-screen bg-transparent">
+      {/* Background elements with proper z-index */}
       <div className="light-rays"></div>
       <div className="sunburst-effect"></div>
       <div className="app-background"></div>

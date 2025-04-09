@@ -42,8 +42,8 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="antialiased min-h-screen bg-background">
-      {/* Enhanced background effects */}
+    <div className="antialiased min-h-screen bg-transparent">
+      {/* Enhanced background effects with proper z-index */}
       <div className="keak-gradient"></div>
       <div className="light-rays"></div>
       <div className="sunburst-effect"></div>
