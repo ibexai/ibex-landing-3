@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -9,6 +10,7 @@ const Hero: React.FC = () => {
   const isInView = useInView(heroRef, {
     threshold: 0.1
   });
+  const isMobile = useIsMobile();
   
   // State to track scroll position and mouse position for parallax effect
   const [scrollY, setScrollY] = useState(0);
@@ -93,24 +95,26 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      {/* Parallax Images Section - increased z-index */}
+      {/* Parallax Images Section - improved responsive behavior */}
       <div 
         ref={parallaxContainerRef} 
-        className="relative w-full max-w-6xl mx-auto mt-8 h-[500px] md:h-[600px] overflow-hidden rounded-2xl z-10"
-        onMouseMove={handleMouseMove}
+        className="relative w-full max-w-6xl mx-auto mt-8 h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden rounded-2xl z-10"
+        onMouseMove={!isMobile ? handleMouseMove : undefined}
       >
         {/* Base layer - moves slowest */}
         <div 
           className="absolute inset-0 w-full h-full"
           style={{ 
-            transform: `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -10}px)`,
+            transform: isMobile ? 
+              `translateY(${scrollY * 0.02}px)` : 
+              `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -10}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         >
           <img 
             src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Base.png" 
             alt="Dashboard Base" 
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-contain sm:object-cover rounded-2xl"
           />
         </div>
         
@@ -118,7 +122,9 @@ const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{ 
-            transform: `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
+            transform: isMobile ? 
+              `translateY(${scrollY * -0.04}px)` : 
+              `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         >
@@ -133,7 +139,9 @@ const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{ 
-            transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -15}px)`,
+            transform: isMobile ? 
+              `translateY(${scrollY * -0.06}px)` : 
+              `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -15}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         >
@@ -148,7 +156,9 @@ const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{ 
-            transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 20}px)`,
+            transform: isMobile ? 
+              `translateY(${scrollY * -0.08}px)` : 
+              `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 20}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         >
