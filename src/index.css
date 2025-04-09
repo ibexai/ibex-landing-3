@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -72,39 +73,9 @@
     min-height: 100vh;
   }
   
-  /* Main grid pattern */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      linear-gradient(to right, rgba(155, 135, 245, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(155, 135, 245, 0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
-    pointer-events: none;
-    z-index: -1;
-  }
+  /* Removed the grid pattern from here */
   
-  /* Circuit board overlay */
-  body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      linear-gradient(90deg, transparent 0%, transparent 40%, rgba(155, 135, 245, 0.06) 40%, rgba(155, 135, 245, 0.06) 41%, transparent 41%, transparent 60%, 
-                      rgba(155, 135, 245, 0.06) 60%, rgba(155, 135, 245, 0.06) 61%, transparent 61%, transparent 90%, rgba(155, 135, 245, 0.06) 90%, rgba(155, 135, 245, 0.06) 91%, transparent 91%),
-      linear-gradient(0deg, transparent 0%, transparent 20%, rgba(155, 135, 245, 0.06) 20%, rgba(155, 135, 245, 0.06) 21%, transparent 21%, transparent 70%,
-                     rgba(155, 135, 245, 0.06) 70%, rgba(155, 135, 245, 0.06) 71%, transparent 71%);
-    background-size: 150px 150px;
-    pointer-events: none;
-    z-index: -2;
-  }
+  /* Removed the circuit board overlay from here */
   
   /* Radial gradient overlay */
   .app-background {
@@ -209,3 +180,4 @@
     z-index: 1;
   }
 }
+
