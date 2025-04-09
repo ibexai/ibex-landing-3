@@ -72,11 +72,7 @@
     position: relative;
     min-height: 100vh;
   }
-  
-  /* Removed the grid pattern from here */
-  
-  /* Removed the circuit board overlay from here */
-  
+    
   /* Radial gradient overlay */
   .app-background {
     position: fixed;
@@ -84,9 +80,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 0%, rgba(155, 135, 245, 0.15) 0%, transparent 70%),
-                radial-gradient(circle at 80% 20%, rgba(155, 135, 245, 0.1) 0%, transparent 60%),
-                radial-gradient(circle at 20% 30%, rgba(155, 135, 245, 0.12) 0%, transparent 50%);
+    background: radial-gradient(circle at 50% 0%, rgba(70, 70, 70, 0.15) 0%, transparent 70%),
+                radial-gradient(circle at 80% 20%, rgba(70, 70, 70, 0.1) 0%, transparent 60%),
+                radial-gradient(circle at 20% 30%, rgba(70, 70, 70, 0.12) 0%, transparent 50%);
     pointer-events: none;
     z-index: -3;
   }
@@ -98,17 +94,17 @@
     z-index: 1;
     transition: all 0.2s ease;
     box-shadow: 
-      0 4px 24px -1px rgba(155, 135, 245, 0.25),
-      0 0 0 1px rgba(155, 135, 245, 0.1),
-      0 0 0 0 rgba(155, 135, 245, 0);
+      0 4px 24px -1px rgba(70, 70, 70, 0.25),
+      0 0 0 1px rgba(70, 70, 70, 0.1),
+      0 0 0 0 rgba(70, 70, 70, 0);
   }
   
   .glass-card:hover {
     transform: translateY(-2px);
     box-shadow: 
-      0 8px 32px -2px rgba(155, 135, 245, 0.35),
-      0 0 0 1px rgba(155, 135, 245, 0.2),
-      0 0 32px -4px rgba(155, 135, 245, 0.2);
+      0 8px 32px -2px rgba(70, 70, 70, 0.35),
+      0 0 0 1px rgba(70, 70, 70, 0.2),
+      0 0 32px -4px rgba(70, 70, 70, 0.2);
   }
   
   /* Button hover transition */
@@ -180,4 +176,3 @@
     z-index: 1;
   }
 }
-
