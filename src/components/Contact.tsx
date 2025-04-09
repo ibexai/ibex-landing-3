@@ -3,11 +3,13 @@ import React, { useRef, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
 import { useToast } from '@/hooks/use-toast';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef);
   const { toast } = useToast();
+  const isMobile = useIsMobile();
   
   const [formData, setFormData] = useState({
     name: '',
@@ -62,9 +64,9 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
                 </div>
-                <div className="min-w-0"> {/* Added min-w-0 to prevent overflow */}
-                  <h3 className="font-medium mb-1">Email</h3>
-                  <p className="text-muted-foreground break-words">info@ibex.ai</p>
+                <div className="min-w-0 flex-1"> {/* Added flex-1 to ensure text container takes available space */}
+                  <h3 className="font-medium mb-1 text-left">Email</h3>
+                  <p className="text-muted-foreground break-words text-left">info@ibex.ai</p>
                 </div>
               </div>
               
@@ -75,9 +77,9 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                   </svg>
                 </div>
-                <div className="min-w-0"> {/* Added min-w-0 to prevent overflow */}
-                  <h3 className="font-medium mb-1">Office</h3>
-                  <p className="text-muted-foreground break-words">36-38 Piccadilly, London, W1J 0DP</p>
+                <div className="min-w-0 flex-1"> {/* Added flex-1 to ensure text container takes available space */}
+                  <h3 className="font-medium mb-1 text-left">Office</h3>
+                  <p className="text-muted-foreground break-words text-left">36-38 Piccadilly, London, W1J 0DP</p>
                 </div>
               </div>
             </div>
