@@ -43,10 +43,8 @@ const Testimonials: React.FC = () => {
     <section
       ref={sectionRef}
       id="testimonials"
-      className="section-spacing bg-background relative"
+      className="section-spacing bg-transparent relative z-10"
     >
-      {/* Removed background elements since they should be layered at the page level */}
-      
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

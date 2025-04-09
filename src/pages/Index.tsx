@@ -42,14 +42,16 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="antialiased min-h-screen bg-transparent">
-      {/* Enhanced background effects with negative z-index to be behind content */}
-      <div className="keak-gradient"></div>
-      <div className="light-rays"></div>
-      <div className="sunburst-effect"></div>
-      <div className="app-background"></div>
-      <div className="glow-overlay"></div>
-      <div className="backup-pattern"></div>
+    <div className="antialiased min-h-screen bg-transparent relative">
+      {/* Background effects with lower z-index to be behind content */}
+      <div className="fixed inset-0 z-[-50]">
+        <div className="keak-gradient absolute inset-0"></div>
+        <div className="light-rays absolute inset-0"></div>
+        <div className="sunburst-effect absolute inset-0"></div>
+        <div className="app-background absolute inset-0"></div>
+        <div className="glow-overlay absolute inset-0"></div>
+        <div className="backup-pattern absolute inset-0"></div>
+      </div>
       
       <Header />
       <main className="pt-16 md:pt-20 relative z-10">

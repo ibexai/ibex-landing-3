@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { useInView, getAnimationClass } from '@/lib/animations';
 
@@ -53,12 +52,9 @@ const ClientLogos: React.FC = () => {
   return (
     <section 
       ref={sectionRef}
-      className="py-16 md:py-20 bg-background border-t border-border/10 relative"
+      className="py-16 md:py-20 bg-transparent border-t border-border/10 relative z-10"
     >
-      {/* Removed background elements since they should be layered at the page level */}
-      
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className={`text-2xl md:text-3xl font-display font-bold mb-4 ${getAnimationClass(isInView, 'fade-up')}`}>
             Trusted by leading iGaming companies worldwide
@@ -68,7 +64,6 @@ const ClientLogos: React.FC = () => {
           </p>
         </div>
         
-        {/* Logo Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-5xl mx-auto">
           {clients.map((client, index) => (
             <a
