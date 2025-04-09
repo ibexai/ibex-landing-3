@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
@@ -92,7 +93,7 @@ const Hero: React.FC = () => {
         {/* Parallax Images Section */}
         <div 
           ref={parallaxContainerRef} 
-          className="relative w-full mx-auto mt-8 h-[300px] sm:h-[400px] md:h-[600px] overflow-hidden"
+          className="relative w-full max-w-6xl mx-auto mt-8 h-[500px] md:h-[600px] overflow-hidden rounded-2xl"
           onMouseMove={handleMouseMove}
         >
           {/* Base layer - moves slowest */}
@@ -106,13 +107,13 @@ const Hero: React.FC = () => {
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Base.png" 
               alt="Dashboard Base" 
-              className="w-full h-full object-contain md:object-cover object-center"
+              className="w-full h-full object-cover rounded-2xl"
             />
           </div>
           
           {/* Phone layer - moves a bit faster */}
           <div 
-            className="absolute inset-0 w-full h-full scale-[1.15] md:scale-100"
+            className="absolute inset-0 w-full h-full"
             style={{ 
               transform: `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
               transition: 'transform 0.1s ease-out'
@@ -121,13 +122,13 @@ const Hero: React.FC = () => {
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Phone.png" 
               alt="Mobile App" 
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full object-contain"
             />
           </div>
           
           {/* Highlight 1 - moves faster */}
           <div 
-            className="absolute inset-0 w-full h-full scale-[1.15] md:scale-100"
+            className="absolute inset-0 w-full h-full"
             style={{ 
               transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -15}px)`,
               transition: 'transform 0.1s ease-out'
@@ -136,13 +137,13 @@ const Hero: React.FC = () => {
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-1.png" 
               alt="Feature Highlight" 
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full object-contain px-4"
             />
           </div>
           
           {/* Highlight 2 - moves fastest */}
           <div 
-            className="absolute inset-0 w-full h-full scale-[1.15] md:scale-100"
+            className="absolute inset-0 w-full h-full"
             style={{ 
               transform: `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 20}px)`,
               transition: 'transform 0.1s ease-out'
@@ -151,7 +152,7 @@ const Hero: React.FC = () => {
             <img 
               src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-2.png" 
               alt="Feature Highlight" 
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full object-contain px-4"
             />
           </div>
           
