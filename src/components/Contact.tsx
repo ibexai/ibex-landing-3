@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
               </p>
             </div>
             
-            {/* Contact Information */}
+            {/* Contact Information - improved mobile layout */}
             <div className={`space-y-6 ${getAnimationClass(isInView, 'fade-up', 100)}`}>
               <div className="flex items-start">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
@@ -62,13 +62,11 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0"> {/* Added min-w-0 to prevent overflow */}
                   <h3 className="font-medium mb-1">Email</h3>
-                  <p className="text-muted-foreground">info@ibex.ai</p>
+                  <p className="text-muted-foreground break-words">info@ibex.ai</p>
                 </div>
               </div>
-              
-              
               
               <div className="flex items-start">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
@@ -77,9 +75,9 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0"> {/* Added min-w-0 to prevent overflow */}
                   <h3 className="font-medium mb-1">Office</h3>
-                  <p className="text-muted-foreground">36-38 Piccadilly, London, W1J 0DP</p>
+                  <p className="text-muted-foreground break-words">36-38 Piccadilly, London, W1J 0DP</p>
                 </div>
               </div>
             </div>
@@ -88,7 +86,7 @@ const Contact: React.FC = () => {
           {/* Form Side */}
           <div className={getAnimationClass(isInView, 'fade-up', 200)}>
             <form 
-              className="bg-card rounded-xl shadow-md border border-border/20 p-8" 
+              className="bg-card rounded-xl shadow-md border border-border/20 p-6 md:p-8" 
               action="https://formspree.io/f/mpvyaoym"
               method="POST"
               onSubmit={handleSubmit}
