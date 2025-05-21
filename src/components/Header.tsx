@@ -28,7 +28,7 @@ const Header: React.FC = () => {
             { name: 'How it works', path: '/how-it-works' },
             { name: 'Features', path: '/features' },
             { name: 'Case Studies', path: '/case-studies' },
-            // { name: 'Blog', path: '/blog' }
+            { name: 'Blog', path: 'https://blog.ibex.ai/' }
           ].map((item) => (
             <Link 
               key={item.name}
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
               { name: 'How it works', path: '/how-it-works' },
               { name: 'Features', path: '/features' },
               { name: 'Case Studies', path: '/case-studies' },
-              { name: 'Blog', path: '/blog' },
+              { name: 'Blog', path: 'https://blog.ibex.ai/' },
               { name: 'Contact', path: '/contact' }
             ].map((item) => (
               <Link
