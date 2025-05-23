@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useInView, getAnimationClass } from '@/lib/animations';
@@ -47,7 +46,7 @@ const Hero: React.FC = () => {
   };
   
   return (
-    <section ref={heroRef} className="relative min-h-[80vh] flex flex-col items-center justify-center section-spacing pt-20 pb-0 overflow-hidden" id="hero">
+    <section ref={heroRef} className="relative min-h-[80vh] flex flex-col items-center justify-center section-spacing pt-20 pb-0" id="hero">
       {/* Enhanced Background Elements (removed as they're now at the page level) */}
       <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95 z-0"></div>
       
