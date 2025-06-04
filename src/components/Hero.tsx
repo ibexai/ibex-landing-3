@@ -95,82 +95,92 @@ const Hero: React.FC = () => {
       </div>
       
       {/* Parallax Images Section - improved responsive behavior */}
-      <div 
-        ref={parallaxContainerRef} 
-        className="relative w-full max-w-6xl mx-auto mt-8 h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden rounded-2xl z-10"
-        onMouseMove={!isMobile ? handleMouseMove : undefined}
-      >
-        {/* Base layer - moves slowest */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{ 
-            transform: isMobile ? 
-              `translateY(${scrollY * 0.02}px)` : 
-              `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -10}px)`,
-            transition: 'transform 0.1s ease-out'
-          }}
-        >
+      {isMobile ? (
+        <div className="relative w-full max-w-6xl mx-auto mt-8 h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden rounded-2xl z-10">
           <img 
-            src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Base.png" 
-            alt="Dashboard Base" 
-            className="w-full h-full object-contain sm:object-cover rounded-2xl"
+            src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/mobile_hero.png" 
+            alt="Mobile Hero" 
+            className="w-full h-full object-contain rounded-2xl"
           />
         </div>
-        
-        {/* Phone layer - moves a bit faster */}
+      ) : (
         <div 
-          className="absolute inset-0 w-full h-full"
-          style={{ 
-            transform: isMobile ? 
-              `translateY(${scrollY * -0.04}px)` : 
-              `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
-            transition: 'transform 0.1s ease-out'
-          }}
+          ref={parallaxContainerRef} 
+          className="relative w-full max-w-6xl mx-auto mt-8 h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden rounded-2xl z-10"
+          onMouseMove={handleMouseMove}
         >
-          <img 
-            src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Phone.png" 
-            alt="Mobile App" 
-            className="w-full h-full object-contain"
-          />
+          {/* Base layer - moves slowest */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: isMobile ? 
+                `translateY(${scrollY * 0.02}px)` : 
+                `translateY(${scrollY * 0.05}px) translateX(${mousePosition.x * -10}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Base.png" 
+              alt="Dashboard Base" 
+              className="w-full h-full object-contain sm:object-cover rounded-2xl"
+            />
+          </div>
+          
+          {/* Phone layer - moves a bit faster */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: isMobile ? 
+                `translateY(${scrollY * -0.04}px)` : 
+                `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 20}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/Phone.png" 
+              alt="Mobile App" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          
+          {/* Highlight 1 - moves faster */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: isMobile ? 
+                `translateY(${scrollY * -0.06}px)` : 
+                `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -15}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-1.png" 
+              alt="Feature Highlight" 
+              className="w-full h-full object-contain px-4"
+            />
+          </div>
+          
+          {/* Highlight 2 - moves fastest */}
+          <div 
+            className="absolute inset-0 w-full h-full"
+            style={{ 
+              transform: isMobile ? 
+                `translateY(${scrollY * -0.08}px)` : 
+                `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 20}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-2.png" 
+              alt="Feature Highlight" 
+              className="w-full h-full object-contain px-4"
+            />
+          </div>
+          
+          {/* Overlay gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-30 pointer-events-none"></div>
         </div>
-        
-        {/* Highlight 1 - moves faster */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{ 
-            transform: isMobile ? 
-              `translateY(${scrollY * -0.06}px)` : 
-              `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -15}px)`,
-            transition: 'transform 0.1s ease-out'
-          }}
-        >
-          <img 
-            src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-1.png" 
-            alt="Feature Highlight" 
-            className="w-full h-full object-contain px-4"
-          />
-        </div>
-        
-        {/* Highlight 2 - moves fastest */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{ 
-            transform: isMobile ? 
-              `translateY(${scrollY * -0.08}px)` : 
-              `translateY(${scrollY * -0.2}px) translateX(${mousePosition.x * 20}px)`,
-            transition: 'transform 0.1s ease-out'
-          }}
-        >
-          <img 
-            src="https://ibex-landing.s3.eu-west-2.amazonaws.com/static/highlight-2.png" 
-            alt="Feature Highlight" 
-            className="w-full h-full object-contain px-4"
-          />
-        </div>
-        
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-30 pointer-events-none"></div>
-      </div>
+      )}
     </section>
   );
 };
